@@ -1,0 +1,50 @@
+<!--pages/personal/personal/personal.wxml-->
+<!-- <text>pages/personal/personal/personal.wxml</text> -->
+
+<view class="loginBackground">
+  <view class="bighdkrView">
+    <view class="hdkrView">
+      <image class="leftImage" src="../../../resources/fu2.png"></image>
+      <view>
+        <view bindtap="login">点击登录</view>
+        <view class="centerDown">登录更精彩</view>
+      </view>
+    </view>
+  </view>
+</view>
+
+<view class="borrowMoney">
+  <view class="bighdkrView">
+    <view class="leftRightView">
+      <view class="updown">
+        <image class="leftImageRecord" src="../../../resources/fu2.png"></image>
+        <view class="centerUp">借还记录</view>
+      </view>
+      <view class="updown">
+        <image class="leftImageRecord" src="../../../resources/fu2.png"></image>
+        <view class="centerUp">我的礼券</view>
+      </view>
+    </view>
+  </view>
+</view>
+
+<view class="listBackground">
+  <view wx:for="{{listOne}}">
+    <view class="listhdkrView">
+      <view class="listLeft">{{item}}</view>
+      <image class="rightImage" src="../../../resources/arrowRight.png"></image>
+    </view>
+    <view class="lineView"></view>
+  </view>
+</view>
+
+<view class="listBackground">
+  <view wx:for="{{listTwo}}">
+    <view class="listhdkrView">
+      <view class="listLeft">{{item}}</view>
+      <image class="rightImage" src="../../../resources/arrowRight.png"></image>
+    </view>
+    <view class="lineView"></view>
+  </view>
+</view>
+

@@ -1,0 +1,16 @@
+<!--pages/login/login.wxml-->
+<!-- <text>pages/login/login.wxml</text> -->
+
+<view class="background">
+  <view class="userPass">
+    <image class="userImage" src="../../resources/fu1.png"></image>
+    <input type="text" class="userInput" />
+  </view>
+  <view class="userPass">
+    <image class="userImage" src="../../resources/fu1.png"></image>
+    <input type="password" class="userInput" />
+  </view>
+  <view class="userPass">
+    <view class="loginBtn">登录</view>
+  </view>
+</view>

@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "黄河贷",
+  "usingComponents": {},
+  "enablePullDownRefresh": true,
+  "onReachBottomDistance": 100
+}

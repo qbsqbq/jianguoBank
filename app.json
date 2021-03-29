@@ -1,0 +1,41 @@
+{
+  "pages": [
+    "pages/bankLoans/loans/loans",
+    "pages/personal/personal/personal",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/login/login"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#FF0033",
+    "navigationBarTitleText": "黄河贷",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#bfbfbf",
+    "selectedColor": "#c4442a",
+    "list": [
+      {
+        "pagePath": "pages/bankLoans/loans/loans",
+        "selectedIconPath": "resources/tabbars/homeSelect.png",
+        "iconPath": "resources/tabbars/homeNormal.png",
+        "text": "黄河贷"
+      },
+      {
+        "pagePath": "pages/personal/personal/personal",
+        "selectedIconPath": "resources/tabbars/mineSelect.png",
+        "iconPath": "resources/tabbars/mineNormal.png",
+        "text": "个人中心"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 300000,
+    "connectSocket": 300000,
+    "uploadFile": 300000,
+    "downloadFile": 300000
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

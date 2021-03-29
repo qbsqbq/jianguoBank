@@ -1,0 +1,80 @@
+/* pages/personal/personal/personal.wxss */
+
+Page {
+  /* background: #eee; */
+  background: rgb(237, 238, 238);
+}
+
+.loginBackground {
+  margin:  8px;
+  border-radius: 10px;
+}
+.borrowMoney {
+  background: white;
+  margin:  8px;
+  border-radius: 10px;
+}
+.bighdkrView {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 90px;
+}
+.hdkrView {
+  display: flex;
+  align-items: center;
+}
+.leftImage {
+  width: 50px;
+  height: 50px;
+  padding: 15px;
+}
+.centerDown {
+  font-size: 10px;
+  color: gray;
+}
+
+
+.leftRightView {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.leftImageRecord {
+  width: 20px;
+  height: 20px;
+  padding: 0 10px;
+}
+.updown {
+  text-align: center;
+}
+.centerUp {
+  font-size: 14px;
+}
+.listBackground {
+  background: white;
+  margin:  8px;
+  border-radius: 10px;
+}
+.listhdkrView {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.listLeft {
+  padding-left: 15px;
+  font-size: 14px;
+  height: 30px;
+  line-height: 30px;
+}
+.rightImage {
+  width: 6px;
+  height: 12px;
+  padding: 15px;
+}
+.lineView {
+  /* width: 100%; */
+  margin: 0 15px;
+  height: 0;
+  border-top: 0.5px solid rgb(236, 234, 234);
+}
