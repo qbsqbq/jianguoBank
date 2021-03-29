@@ -1,6 +1,7 @@
 {
   "pages": [
     "pages/bankLoans/loans/loans",
+    "pages/product/product/product",
     "pages/personal/personal/personal",
     "pages/index/index",
     "pages/logs/logs",
@@ -21,6 +22,12 @@
         "selectedIconPath": "resources/tabbars/homeSelect.png",
         "iconPath": "resources/tabbars/homeNormal.png",
         "text": "黄河贷"
+      },
+      {
+        "pagePath": "pages/product/product/product",
+        "selectedIconPath": "resources/tabbars/daikuanSelect.png",
+        "iconPath": "resources/tabbars/daikuanNormal.png",
+        "text": "理财产品"
       },
       {
         "pagePath": "pages/personal/personal/personal",
