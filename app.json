@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/functionList/functionList",
     "pages/product/product/product",
     "pages/bankLoans/loans/loans",
     "pages/personal/personal/personal",
@@ -19,7 +20,7 @@
     "selectedColor": "#c4442a",
     "list": [
       {
-        "pagePath": "pages/bankLoans/loans/loans",
+        "pagePath": "pages/functionList/functionList",
         "selectedIconPath": "resources/tabbars/homeSelect.png",
         "iconPath": "resources/tabbars/homeNormal.png",
         "text": "齐浩贷"

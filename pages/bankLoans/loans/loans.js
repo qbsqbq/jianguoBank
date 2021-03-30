@@ -80,11 +80,11 @@ Page({
     if (this.data.listArr.length < this.data.TotalNum) {
       // this.requestData()
     }else{
-      wx.showToast({
-        title: '没有更多数据了',
-        icon: 'none',
-        duration: 1000
-      })
+      // wx.showToast({
+      //   title: '没有更多数据了',
+      //   icon: 'none',
+      //   duration: 1000
+      // })
     }
   }
 
