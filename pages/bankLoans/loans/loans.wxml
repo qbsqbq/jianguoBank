@@ -13,7 +13,7 @@
         <view class="lineView"></view>
         <view class="limitView">可借额度范围</view>
         <view class="moneyView">
-          <view class="leftMoney">200000</view>
+          <view class="leftMoney">400000</view>
           <view class="rightBtn">获取额度</view>
         </view>
         <view class="limitView">年利率最低可至 6%</view>
@@ -34,7 +34,7 @@
         <view class="lineView"></view>
         <view class="limitView1">可借额度范围</view>
         <view class="moneyView">
-          <view class="leftMoney1">300000</view>
+          <view class="leftMoney1">700000</view>
           <view class="rightBtn1">获取额度</view>
         </view>
         <view class="limitView1">年利率最低可至 3.85%</view>
@@ -71,7 +71,7 @@
     <view class="carBigView">
       <view>
         <view class="carMoneyTop">最高可借额度</view>
-        <view class="carMoney">200000</view>
+        <view class="carMoney">500000</view>
       </view>
       <view>
         <view class="carMoneyTop">年利率最低可至</view>

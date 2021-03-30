@@ -42,7 +42,7 @@
   "compileType": "miniprogram",
   "libVersion": "2.16.0",
   "appid": "wx3afd4cd618216448",
-  "projectname": "HHBankLoan",
+  "projectname": "jianguoBank",
   "debugOptions": {
     "hidedInDevtools": []
   },

@@ -6,7 +6,7 @@ Page {
 }
 
 .itemView {
-  background: rgb(235, 78, 78);
+  background: rgb(137, 207, 228);
   height: 200px;
   margin:  10px;
   border-radius: 10px;
@@ -21,7 +21,7 @@ Page {
 }
 .leftType {
   background-color: white;
-  color: rgb(235, 78, 78);
+  color: rgb(137, 207, 228);
   text-align: center;
   font-size: 12px;
   border-radius: 8px 0;
@@ -58,7 +58,7 @@ Page {
 .rightBtn {
   background-color: white;
   padding: 0 15px;
-  color: rgb(235, 78, 78);
+  color: rgb(137, 207, 228);
   text-align: center;
   border-radius: 20px;
 }
@@ -81,14 +81,14 @@ Page {
   height: 200px;
   margin:  10px;
   border-radius: 10px;
-  border: 2px solid rgb(235, 78, 78);
+  border: 2px solid rgb(137, 207, 228);
 }
 .titleView {
   padding: 15px 0;
   display: flex;
 }
 .leftType1 {
-  background-color: rgb(235, 78, 78);
+  background-color: rgb(137, 207, 228);
   color: white;
   text-align: center;
   font-size: 12px;
@@ -112,19 +112,19 @@ Page {
   padding: 6px 0;
 }
 .leftMoney1 {
-  color: rgb(235, 78, 78);
+  color: rgb(137, 207, 228);
   font-size: 35px;
   font-weight: bold;
 }
 .rightBtn1 {
-  background-color: rgb(235, 78, 78);
+  background-color: rgb(137, 207, 228);
   padding: 0 15px;
   color: white;
   text-align: center;
   border-radius: 20px;
 }
 .labelView1 {
-  background-color: rgb(250, 192, 192);
+  background-color: rgb(137, 207, 228);
   color: rgb(235, 78, 78);
   font-size: 10px;
   margin: 0 2px;
@@ -163,13 +163,13 @@ Page {
 }
 .hdkrBtn {
   /* height: 20px; */
-  border: 1px solid rgb(235, 78, 78);
+  border: 1px solid rgb(137, 207, 228);
   border-radius: 20px;
   margin-right: 20px;
   padding: 2px 8px;
   font-size: 12px;
   background-color: white;
-  color: rgb(235, 78, 78);
+  color: rgb(137, 207, 228);
 }
 
 
@@ -197,10 +197,10 @@ Page {
 }
 .carMoney {
   font-size: 20px;
-  color: rgb(235, 78, 78);
+  color: rgb(137, 207, 228);
 }
 .carBtn {
-  background-color: rgb(235, 78, 78);
+  background-color: rgb(137, 207, 228);
   padding: 5px 10px;
   color: white;
   font-size: 12px;
