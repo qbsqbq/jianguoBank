@@ -1,28 +1,27 @@
-
 <!--头部-->
 
 <!--item-->
 <view class="menu">
-		<view class="button" wx:for="{{menus}}" wx:key="meunId" bind:tap="selectMenu" data-title="{{item.title}}">
-			<image src="{{item.icon}}" />
-			<view>{{item.title}}</view>
-		</view>
-	</view>
+  <view class="button" wx:for="{{menus}}" wx:key="meunId" bind:tap="selectMenu" data-title="{{item.title}}">
+    <image src="{{item.icon}}" />
+    <view>{{item.title}}</view>
+  </view>
+</view>
 
 <!--轮播图-->
 <view class="banar">
-<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}"
-  indicator-color="{{indicatorColor}}" indicator-active-color="{{activeColor}}" circular="{{circuLar}}"
-  easing-function="{{easingFunction}}">
-  <block wx:for="{{imgUrls}}">
+  <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}"
+    indicator-color="{{indicatorColor}}" indicator-active-color="{{activeColor}}" circular="{{circuLar}}"
+    easing-function="{{easingFunction}}">
+    <block wx:for="{{imgUrls}}">
 
-    <swiper-item>
-      <navigator url="{{item.path}}" hover-class="navigator-hover">
-        <image src="{{item.url}}" class="slide-image" width="355" height="200" />
-      </navigator>
-    </swiper-item>
+      <swiper-item>
+        <navigator url="{{item.path}}" hover-class="navigator-hover">
+          <image src="{{item.url}}" class="slide-image" width="355" height="200"  mode="aspectFill"/>
+        </navigator>
+      </swiper-item>
 
-  </block>
+    </block>
 
-</swiper>
+  </swiper>
 </view>
