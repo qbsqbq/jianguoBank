@@ -1,1 +1,5 @@
-/* pages/product/product/product.wxss */
+/*轮播图*/
+.slide-image {
+  width: 100%;
+  height: 300rpx;
+ }

@@ -1,2 +1,15 @@
-<!--pages/product/product/product.wxml-->
-<text>pages/product/product/product.wxml</text>
+<!--轮播图-->
+<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}"
+  indicator-color="{{indicatorColor}}" indicator-active-color="{{activeColor}}" circular="{{circuLar}}"
+  easing-function="{{easingFunction}}">
+  <block wx:for="{{imgUrls}}">
+
+    <swiper-item>
+      <navigator url="{{item.id}}" hover-class="navigator-hover">
+        <image src="{{item.url}}" class="slide-image" width="355" height="200" />
+      </navigator>
+    </swiper-item>
+
+  </block>
+
+</swiper>
