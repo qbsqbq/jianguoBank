@@ -1,4 +1,5 @@
 <!--轮播图-->
+<view class="banar">
 <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}"
   indicator-color="{{indicatorColor}}" indicator-active-color="{{activeColor}}" circular="{{circuLar}}"
   easing-function="{{easingFunction}}">
@@ -13,3 +14,4 @@
   </block>
 
 </swiper>
+</view>
