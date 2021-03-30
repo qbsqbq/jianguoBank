@@ -1,3 +1,14 @@
+
+<!--头部-->
+
+<!--item-->
+<view class="menu">
+		<view class="button" wx:for="{{menus}}" wx:key="meunId" bind:tap="selectMenu" data-title="{{item.title}}">
+			<image src="{{item.icon}}" />
+			<view>{{item.title}}</view>
+		</view>
+	</view>
+
 <!--轮播图-->
 <view class="banar">
 <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}"
@@ -6,7 +17,7 @@
   <block wx:for="{{imgUrls}}">
 
     <swiper-item>
-      <navigator url="{{item.id}}" hover-class="navigator-hover">
+      <navigator url="{{item.path}}" hover-class="navigator-hover">
         <image src="{{item.url}}" class="slide-image" width="355" height="200" />
       </navigator>
     </swiper-item>
