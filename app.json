@@ -7,7 +7,8 @@
     "pages/index/index",
     "pages/logs/logs",
     "pages/login/login",
-    "pages/nkxxLoans/nkxxLoans"
+    "pages/nkxxLoans/nkxxLoans",
+    "pages/getPhoneNum/getPhoneNum"
   ],
   "window": {
     "backgroundTextStyle": "dark",

@@ -1,24 +1,26 @@
-// pages/functionList/functionList.js
+// pages/getPhoneNum/getPhoneNum.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    list: [
-      { id: 0, title: '贷款界面一', path: '../nkxxLoans/nkxxLoans' },
-      { id: 1, title: '贷款界面二', path: '../bankLoans/loans/loans' },
-      { id: 2, title: '获取手机号授权', path: '../getPhoneNum/getPhoneNum' },
-    ],
+
   },
 
-  //事件处理函数
-  itemClick(e) {
-    var that = this;
-    var url = that.data.list[parseInt(e.currentTarget.id)].path;
-    wx.navigateTo({
-      url: url,
-    })
+  // 获取手机号
+  getPhoneNumber (e) {
+    console.log(e.detail)
+    if (e.detail.errMsg == 'getPhoneNumber:ok') {
+      wx.showToast({
+        title: '授权成功',
+      })
+    }else {
+      wx.showToast({
+        title: '拒绝授权',
+        icon: 'none'
+      })
+    }
   },
 
   /**

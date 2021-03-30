@@ -1,0 +1,6 @@
+<!--pages/getPhoneNum/getPhoneNum.wxml-->
+<!-- <text>pages/getPhoneNum/getPhoneNum.wxml</text> -->
+
+
+
+<button class="phone" open-type="getPhoneNumber" bindtap="getPhoneNumber">获取手机号授权</button>
