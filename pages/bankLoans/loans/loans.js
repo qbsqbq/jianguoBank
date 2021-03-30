@@ -48,7 +48,7 @@ Page({
   //   }
   //   var obj = JSON.stringify(myObj);
     wx.navigateTo({
-      url: '../../login/login'
+      url: '../../nkxxLoans/nkxxLoans'
     })
   },
 

@@ -5,12 +5,13 @@
     "pages/personal/personal/personal",
     "pages/index/index",
     "pages/logs/logs",
-    "pages/login/login"
+    "pages/login/login",
+    "pages/nkxxLoans/nkxxLoans"
   ],
   "window": {
     "backgroundTextStyle": "dark",
     "navigationBarBackgroundColor": "#FF0033",
-    "navigationBarTitleText": "黄河贷",
+    "navigationBarTitleText": "齐浩贷",
     "navigationBarTextStyle": "white"
   },
   "tabBar": {
@@ -21,7 +22,7 @@
         "pagePath": "pages/bankLoans/loans/loans",
         "selectedIconPath": "resources/tabbars/homeSelect.png",
         "iconPath": "resources/tabbars/homeNormal.png",
-        "text": "黄河贷"
+        "text": "齐浩贷"
       },
       {
         "pagePath": "pages/product/product/product",
