@@ -8,7 +8,8 @@
     "pages/logs/logs",
     "pages/login/login",
     "pages/nkxxLoans/nkxxLoans",
-    "pages/getPhoneNum/getPhoneNum"
+    "pages/getPhoneNum/getPhoneNum",
+    "pages/creditCard/creditCard"
   ],
   "window": {
     "backgroundTextStyle": "dark",
