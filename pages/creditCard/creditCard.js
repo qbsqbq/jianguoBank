@@ -7,17 +7,17 @@ Page({
   data: {
     topList: [
       {
-        image: "../../resources/fu2.png",
+        image: "/resources/fu2.png",
         title: "一键办卡",
         subTitle: "额度可达5万"
       },
       {
-        image: "../../resources/fu2.png",
+        image: "/resources/fu2.png",
         title: "我要选卡",
         subTitle: "达标领拉杆箱等"
       },
       {
-        image: "../../resources/fu2.png",
+        image: "/resources/fu2.png",
         title: "推荐办卡",
         subTitle: "抢大牌好礼"
       }
@@ -76,14 +76,14 @@ Page({
     ],
     nowList: [
       {
-        image: "../../resources/fu2.png",
+        image: "/resources/fu2.png",
         title: "春游礼包",
         date: "截止日期04月30日",
         havGet: "已申领84392",
         price: "¥ 290",
       },
       {
-        image: "../../resources/fu2.png",
+        image: "/resources/fu2.png",
         title: "华为智能体脂秤",
         date: "截止日期04月02日",
         havGet: "已申领2984",
@@ -92,41 +92,41 @@ Page({
     ],
     scrollOneList: [
       {
-        image: "../../resources/fu2.png",
+        image: "/resources/fu2.png",
         title: "卡超市",
         subTitle: "丰富卡类,等你来选"
       },
       {
-        image: "../../resources/fu2.png",
+        image: "/resources/fu2.png",
         title: "一键办卡",
         subTitle: "轻松办卡,一键获取"
       }
     ],
     gudkList: [
       {
-        image: "../../resources/fu2.png",
+        image: "/resources/fu2.png",
         title: "预借现金",
         subTitle: "消费专家"
       },
       {
-        image: "../../resources/fu2.png",
+        image: "/resources/fu2.png",
         title: "账单分期",
         subTitle: "管账达人"
       },
       {
-        image: "../../resources/fu2.png",
+        image: "/resources/fu2.png",
         title: "持卡贷款",
         subTitle: "理财大师"
       }
     ],
     scrollTwoList: [
       {
-        image: "../../resources/fu2.png",
+        image: "/resources/fu2.png",
         title: "重疾保障,边耍边保",
         subTitle: "刷卡金100%累加保额"
       },
       {
-        image: "../../resources/fu2.png",
+        image: "/resources/fu2.png",
         title: "免费领取,40万保额",
         subTitle: "重疾,意外全面保障"
       }
