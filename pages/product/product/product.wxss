@@ -83,15 +83,35 @@
 .newsItem {
   height: 220rpx;
   width: 100%;
-  background-color: red;
   margin-top: 20rpx;
   display:flex;
-  flex-flow: row;
+  justify-content: space-between;
+  /* border-top: 2rpx solid #5A6274; */
+  /* border-bottom:2rpx solid #5A6274; */
 }
 
-.newsImg{
-  width: 80rpx;
+.wenzi{
+  display: flex;
+  flex-flow: column;
+  padding-left:20rpx ;
+  justify-content: space-around;
+}
+
+.newsTitle{
+margin-top: 20rpx;
+}
+
+.newsTime{
+  margin-bottom: 20rpx;
+}
+.newsImgview{
+  width: 180rpx;
   height: 180rpx;
   margin-top: 20rpx;
-  justify-content:left;
+  display: flex;
+  justify-content: flex-end;
+}
+.newsImage{
+  width: 180rpx;
+  height: 180rpx;
 }

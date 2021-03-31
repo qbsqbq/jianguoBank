@@ -41,10 +41,13 @@
 <view class="zixunTitle">资讯</view>
 
 <view class="newsItem" wx:for="{{4}}">
-  <view>这是标题</view>
-  <view>2021-3-24</view>
-  <view>
-    <image src="/resources/produc/rmhd.png" class="newsImg"></image>
+  <view class="wenzi">
+    <view class="newsTitle">这是标题</view>
+  <view class="newsTime">2021-3-24</view>
+  </view>
+ 
+  <view class="newsImgview">
+    <image src="/resources/produc/rmhd.png" class="newsImage"></image>
   </view>
 </view>
 
