@@ -31,7 +31,7 @@
           <view class="text_sub">{{item.price}}</view>
         </view>
         <view class="rightTitle">
-          <view class="right_subtitle">已申领84147</view>
+          <view class="right_subtitle">{{item.havGet}}</view>
           <view class="lijiqlBtn">立即抢</view>
         </view>
       </view>

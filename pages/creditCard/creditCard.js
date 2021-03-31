@@ -79,13 +79,15 @@ Page({
         image: "../../resources/fu2.png",
         title: "春游礼包",
         date: "截止日期04月30日",
-        price: "¥ 0",
+        havGet: "已申领84392",
+        price: "¥ 290",
       },
       {
         image: "../../resources/fu2.png",
         title: "华为智能体脂秤",
         date: "截止日期04月02日",
-        price: "¥ 0",
+        havGet: "已申领2984",
+        price: "¥ 2430",
       }
     ],
     scrollOneList: [
