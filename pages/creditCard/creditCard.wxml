@@ -2,11 +2,11 @@
 <!-- <text>pages/creditCard/creditCard.wxml</text> -->
 
 <view>
-  <image class="topImage" src="../../resources/fu2.png"></image>
+  <!-- <image class="topImage" src="../../resources/fu2.png"></image>
   <view class="topView">
     <view class="uxkaView">刷卡支付</view>
     <view class="uxkadetail">就选招商银行信用卡</view>
-  </view>
+  </view> -->
   <view class="threeItem">
     <view class="imageTitle" wx:for="{{topList}}">
       <image class="smallImage" src="{{item.image}}"></image>
@@ -25,7 +25,7 @@
       <image class="image1" src="../../resources/fu2.png"></image>
       <view class="imgLabBtn" wx:for="{{nowList}}">
         <image src="{{item.image}}"></image>
-        <view>
+        <view class="centerview">
           <view class="img_title">{{item.title}}</view>
           <view class="img_subtitle">{{item.date}}</view>
           <view class="text_sub">{{item.price}}</view>
