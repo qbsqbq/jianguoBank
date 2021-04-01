@@ -9,7 +9,8 @@
     "pages/login/login",
     "pages/nkxxLoans/nkxxLoans",
     "pages/getPhoneNum/getPhoneNum",
-    "pages/creditCard/creditCard"
+    "pages/creditCard/creditCard",
+    "pages/webViewPage/webViewPage"
   ],
   "window": {
     "backgroundTextStyle": "dark",
