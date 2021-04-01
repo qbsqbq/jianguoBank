@@ -1,0 +1,13 @@
+<!--pages/functionList/functionList.wxml-->
+<!-- <text>pages/functionList/functionList.wxml</text> -->
+
+
+<view class="listBackground">
+  <view wx:for="{{list}}" id='{{item.id}}' bindtap="itemClick">
+    <view class="listhdkrView">
+      <view class="listLeft">{{item.title}}</view>
+      <image class="rightImage" src="../../resources/arrowRight.png"></image>
+    </view>
+    <view class="lineView"></view>
+  </view>
+</view>

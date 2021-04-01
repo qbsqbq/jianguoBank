@@ -24,7 +24,7 @@
     <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}"
       indicator-color="{{indicatorColor}}" indicator-active-color="{{activeColor}}" circular="{{circuLar}}"
       easing-function="{{easingFunction}}">
-      <block wx:for="{{imgUrls}}" wx:key="this">
+      <block wx:for="{{imgUrls}}">
 
         <swiper-item>
           <navigator url="{{item.path}}" hover-class="navigator-hover">
@@ -40,7 +40,7 @@
     <!--资讯-->
 <view class="zixunTitle">资讯</view>
 
-<view class="newsItem" wx:for="{{newsList}}" wx:key="id" bindtap="selctNewsItem" id="{{item.postid}}">
+<view class="newsItem" wx:for="{{newsList}}">
   <view class="wenzi">
     <view class="newsTitle">{{item.title}}</view>
     <view class="bottonTitle">

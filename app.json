@@ -1,16 +1,16 @@
 {
   "pages": [
-    "pages/functionList/functionList",
+    "pages/MFunction/functionList/functionList",
     "pages/product/product/product",
-    "pages/bankLoans/loans/loans",
+    "pages/MFunction/bankLoans/loans/loans",
     "pages/personal/personal/personal",
     "pages/index/index",
     "pages/logs/logs",
     "pages/login/login",
-    "pages/nkxxLoans/nkxxLoans",
-    "pages/getPhoneNum/getPhoneNum",
-    "pages/creditCard/creditCard",
-    "pages/webViewPage/webViewPage"
+    "pages/MFunction/bankLoans/nkxxLoans/nkxxLoans",
+    "pages/MFunction/getPhoneNum/getPhoneNum",
+    "pages/MFunction/creditCard/creditCard",
+    "pages/MFunction/webView/webView"
   ],
   "window": {
     "backgroundTextStyle": "dark",
@@ -23,7 +23,7 @@
     "selectedColor": "#c4442a",
     "list": [
       {
-        "pagePath": "pages/functionList/functionList",
+        "pagePath": "pages/MFunction/functionList/functionList",
         "selectedIconPath": "resources/tabbars/homeSelect.png",
         "iconPath": "resources/tabbars/homeNormal.png",
         "text": "齐浩贷"

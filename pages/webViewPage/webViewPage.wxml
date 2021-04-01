@@ -1,6 +1,0 @@
-
-<rich-text nodes="{{detaileUrl}}"></rich-text>
-
-<!-- <web-view src="{{detaileUrl}}"></web-view> -->
-
- 
