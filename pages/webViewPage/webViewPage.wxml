@@ -1,6 +1,7 @@
 
 <!-- <view>{{detaileUrl}}</view> -->
-<rich-text>{{detaileUrl}}</rich-text>
+<rich-text nodes="{{detaileUrl}}"></rich-text>
+
 <!-- <web-view src="{{detaileUrl}}"></web-view> -->
 
  

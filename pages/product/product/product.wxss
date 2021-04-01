@@ -94,7 +94,7 @@
 .wenzi{
   display: flex;
   flex-flow: column;
-  /* padding-left:20rpx ; */
+  padding-left:20rpx ;
   justify-content: space-between;
 }
 
