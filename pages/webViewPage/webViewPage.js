@@ -16,39 +16,20 @@ Page({
   onLoad: function (options) {
     
     console.log("HAHA" + options.postid),
-    // this.setData({
-    //   postid: options.postid,
-    //   }),
-
 
     wx.request({
       url: 'http://un.jipinlantu.com/index/News2/new_detail?postid=' + options.postid,
       success: (result) => {
         console.log(result),
 
-
         this.setData({
-
           detaileUrl: result.data.data.body,
-
-          // detaileUrl : escape2Html(result.data.data.body),
-
         })
       },
      
       fail: (res) => {},
       complete: (res) => {},
     })
-  
-  // wx.request({
-  //   url: 'http://un.jipinlantu.com/index/News2/new_detail?postid=' + options.postid,
-  //   success: (result) => {
-  //     this.setData({
-  //       detaileUrl: result.data.body,
-  //     })
-  //     console.log(detaileUrl+"URL是什么")
-  //   },
-  // })
   
   },
 
