@@ -11,7 +11,10 @@
     "pages/MFunction/getPhoneNum/getPhoneNum",
     "pages/MFunction/creditCard/creditCard",
     "pages/MFunction/webView/webView",
-    "pages//newsWebView/newsWebView"
+    "pages/MFunction/cars/carsList/carsList",
+    "pages/MFunction/cars/carsSubList/carsSubList",
+    "pages/MFunction/cars/subTwoList/subTwoList",
+    "pages/MFunction/cars/infoDetail/infoDetail"
   ],
   "window": {
     "backgroundTextStyle": "dark",
@@ -27,7 +30,7 @@
         "pagePath": "pages/MFunction/functionList/functionList",
         "selectedIconPath": "resources/tabbars/homeSelect.png",
         "iconPath": "resources/tabbars/homeNormal.png",
-        "text": "齐浩贷"
+        "text": "功能集"
       },
       {
         "pagePath": "pages/product/product/product",

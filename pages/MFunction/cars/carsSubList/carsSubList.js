@@ -1,33 +1,43 @@
-// pages/functionList/functionList.js
+// pages/MFunction/cars/carsSubList/carsSubList.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    list: [
-      { id: 0, title: '贷款界面一', path: '../bankLoans/nkxxLoans/nkxxLoans' },
-      { id: 1, title: '贷款界面二', path: '../bankLoans/loans/loans' },
-      { id: 2, title: '获取手机号授权', path: '../getPhoneNum/getPhoneNum' },
-      { id: 3, title: '招商银行信用卡', path: '../creditCard/creditCard' },
-      { id: 4, title: '崛起吧我的车,碾压齐厮之理财', path: '../cars/carsList/carsList' },
-    ],
-  },
-
-  //事件处理函数
-  itemClick(e) {
-    var that = this;
-    var url = that.data.list[parseInt(e.currentTarget.id)].path;
-    wx.navigateTo({
-      url: url,
-    })
+    imgUrl: '',
+    subDic: {},
+    lists: []
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    var that = this
+    var obj = JSON.parse(decodeURIComponent(options.obj))
+    that.setData({
+      imgurl: obj.imgurl
+    })
+    wx.request({
+      url: 'http://price.cartype.kakamobi.com/api/open/car-type-basic/get-grouped-serial-list.htm?type=0&brandId='+obj.id,
+      success (res) {
+        console.log(res.data)
+        if (res.data.data.length) {
+          that.setData({
+            subDic: res.data.data[0],
+            lists: res.data.data[0].lists
+          })
+        }
+      }
+    })
+  },
 
+  itemClick (e) {
+    let id = e.currentTarget.dataset.id
+    wx.navigateTo({
+      url: '../subTwoList/subTwoList?id=' + encodeURIComponent(id)
+    })
   },
 
   /**

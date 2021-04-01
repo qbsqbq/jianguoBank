@@ -1,0 +1,61 @@
+/* pages/MFunction/cars/carsList.wxss */
+
+
+
+Page {
+  background: rgb(237, 238, 238);
+}
+
+.scroll_view {
+  background-color: white;
+  /* margin: 0 20rpx; */
+}
+.scroll {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+.small_name {
+  font-size: 10px;
+  color: gray;
+  width: 180rpx;
+}
+.scroll_image {
+  width: 100rpx;
+  height: 100rpx;
+}
+
+
+.index_title {
+  margin: 0 10px;
+}
+.listBackground {
+  background: white;
+  margin:  8px;
+  border-radius: 10px;
+}
+.listhdkrView {
+  display: flex;
+  align-items: center;
+}
+.leftImage {
+  width: 150rpx;
+  height: 150rpx;
+  padding: 15px;
+}
+.title_view {
+  font-size: 15px;
+  height: 30px;
+  line-height: 30px;
+}
+.sub_title {
+  font-size: 13px;
+  color: gray;
+  height: 30px;
+  line-height: 30px;
+}
+.lineView {
+  margin: 0 15px;
+  height: 0;
+  border-top: 0.5px solid rgb(236, 234, 234);
+}

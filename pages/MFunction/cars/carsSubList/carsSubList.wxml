@@ -1,0 +1,31 @@
+<!--pages/MFunction/cars/carsSubList/carsSubList.wxml-->
+<!-- <text>pages/MFunction/cars/carsSubList/carsSubList.wxml</text> -->
+
+
+<view>
+  <view class="back_view">
+    <view class="logo_back">
+      <image class="logo_image" src="{{imgurl}}"></image>
+      <view class="logo_text">{{subDic.factoryName}}</view>
+    </view>
+  </view>
+  <view class="listBackground">
+    <view wx:if="{{!lists.length}}" class="noData">
+      <image src="../../../../resources/noData.png"></image>
+      <view>暂无数据</view>
+    </view>
+    <view wx:if="{{lists.length}}" wx:for="{{lists}}" wx:key="id" bindtap="itemClick" data-id="{{item.id}}" data-imgurl="{{item.imgUrl}}">
+      <view class="listhdkrView">
+        <image class="leftImage" src="{{item.imgUrl}}"></image>
+        <view class="rightView">
+          <view class="title_display">
+            <view class="name_view">{{item.name}}</view>
+            <view class="level_view">{{item.level}}</view>
+          </view>
+          <view class="sub_title">{{item.minPrice/10000}}万-{{item.maxPrice/10000}}万</view>
+        </view>
+      </view>
+      <view class="lineView"></view>
+    </view>
+  </view>
+</view>
