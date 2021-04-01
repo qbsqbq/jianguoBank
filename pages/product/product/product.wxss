@@ -22,6 +22,7 @@
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
+  
 }
 
 .moretitle{
@@ -94,24 +95,40 @@
   display: flex;
   flex-flow: column;
   padding-left:20rpx ;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
+.bottonTitle{
+  display: flex;
+  flex-direction: row;
+  justify-content:flex-start;
+}
 .newsTitle{
-margin-top: 20rpx;
+ margin-top: 20rpx;
+ color: black;
+ font-size: 34rpx;
+ font-weight: 400;
 }
 
 .newsTime{
   margin-bottom: 20rpx;
+  color:darkgray;
+  font-size: 20rpx;
 }
+.sourseTitle{
+  color: #5A6274;
+  font-size: 20rpx;
+}
+
 .newsImgview{
-  width: 180rpx;
+  width: 250rpx;
   height: 180rpx;
   margin-top: 20rpx;
   display: flex;
   justify-content: flex-end;
 }
 .newsImage{
-  width: 180rpx;
+  width: 250rpx;
   height: 180rpx;
+  border-radius: 10rpx;
 }
