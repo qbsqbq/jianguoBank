@@ -1,0 +1,85 @@
+/* pages/MFunction/cars/carsSubList/carsSubList.wxss */
+
+
+Page {
+  background: rgb(237, 238, 238);
+  /* margin: 20rpx; */
+}
+
+.back_view {
+  width: 100%;
+}
+.logo_back {
+  background-color: white;
+  margin: 20rpx;
+  text-align: center;
+  border-radius: 5rpx;
+}
+.logo_image {
+  width: 150rpx;
+  height: 150rpx;
+  margin-top: 20px;
+}
+.logo_text {
+  font-size: 15px;
+  font-weight: bold;
+  padding-bottom: 20rpx;
+}
+
+
+
+.listBackground {
+  background: white;
+  margin: 20rpx;
+  border-radius: 5rpx;
+}
+.noData {
+  text-align: center;
+  font-size: 14px;
+  color: gray;
+  padding: 300rpx 0;
+}
+.noData image {
+  width: 220rpx;
+  height: 220rpx;
+}
+
+.listhdkrView {
+  display: flex;
+  align-items: center;
+}
+.leftImage {
+  width: 150rpx;
+  height: 150rpx;
+  padding: 15px;
+}
+.rightView {
+  width: 460rpx;
+}
+.title_display {
+  display: flex;
+  justify-content: space-between;
+  /* background-color: hotpink; */
+}
+.name_view {
+  font-size: 15px;
+  height: 30px;
+  line-height: 30px;
+}
+.level_view {
+  color: gray;
+  font-size: 13px;
+  height: 30px;
+  line-height: 30px;
+}
+.sub_title {
+  font-size: 12px;
+  color: gray;
+  height: 30px;
+  line-height: 30px;
+}
+.lineView {
+  margin: 0 15px;
+  height: 0;
+  border-top: 0.5px solid rgb(236, 234, 234);
+}

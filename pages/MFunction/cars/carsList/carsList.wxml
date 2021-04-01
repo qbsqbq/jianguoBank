@@ -1,0 +1,32 @@
+<!--pages/MFunction/cars/carsList.wxml-->
+<!-- <text>pages/MFunction/cars/carsList.wxml</text> -->
+
+
+<view>
+  <view>
+    <scroll-view class="scroll_view" scroll-x>
+      <view class="scroll">
+        <view wx:for="{{topList}}" wx:key="{{item.id}}" data-id="{{item.id}}" bindtap="topItemClick">
+          <image class="scroll_image" src="{{item.imgUrl}}"></image>
+          <view class="small_name">{{item.name}}</view>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+  <view wx:for="{{carList}}" wx:key="firstLetter">
+    <view class="index_title">{{item.firstLetter}}</view>
+    <view class="listBackground">
+      <view wx:for="{{item.lists}}" wx:key="firstLetter" bindtap="carItemClick" data-id="{{item.id}}" data-imgurl="{{item.imgUrl}}">
+        <view class="listhdkrView">
+          <image class="leftImage" src="{{item.imgUrl}}"></image>
+          <view>
+            <view class="title_view">{{item.name}}</view>
+            <view class="sub_title">{{item.country}}</view>
+          </view>
+        </view>
+        <view class="lineView"></view>
+      </view>
+    </view>
+  </view>
+</view>
+
