@@ -21,51 +21,61 @@ var data = {
       meunId: 1,
       title: "额度",
       icon: "/resources/produc/xyk.png",
+      weburl: "https://www.meituan.com"
     },
     {
       meunId: 2,
       title: "查账",
       icon: "/resources/produc/ck.png",
+      weburl: "https://macyan.com"
     },
     {
       meunId: 3,
       title: "账单分期",
       icon: "/resources/produc/rmhd.png",
+      weburl: "http://mini.eastday.com"
     },
     {
       meunId: 4,
       title: "现金贷款",
       icon: "/resources/produc/sbfw.png",
+      weburl: "https://web.chelaile.net.cn/wwd/index?src=webapp_app_zhihuijinfeng"
     },
     {
       meunId: 5,
       title: "掌上商城",
       icon: "/resources/produc/wdyy.png",
+      weburl: "https://common.diditaxi.com.cn/general/webEntry?wx=true&bizid=257&channel=70365#/"
     },
     {
       meunId: 6,
       title: "卡片精选",
       icon: "/resources/produc/dk.png",
+      weburl: "http://www.kuaidi100.com"
     },
     {
       meunId: 7,
       title: "保险服务",
       icon: "/resources/produc/lccp.png",
+      weburl: ""
     },
     {
       meunId: 8,
       title: "热门活动",
       icon: "/resources/produc/jj.png",
+      weburl: ""
     },
     {
       meunId: 9,
       title: "今日必看",
       icon: "/resources/produc/cz.png",
+      weburl: ""
     },
     {
       meunId: 10,
       title: "热议话题",
       icon: "/resources/produc/qb.png",
+      weburl: ""
     }
   ],
   nowList: [

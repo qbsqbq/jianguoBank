@@ -16,13 +16,15 @@
   </view>
   <view class="itemView">
     <view class="imgLabel" wx:for="{{itemList}}">
-      <image class="smallimg" src="{{item.icon}}"></image>
-      <view class="titleDetail">{{item.title}}</view>
+      <view bindtap="itemClick" data-weburl="{{item.weburl}}">
+        <image class="smallimg" src="{{item.icon}}"></image>
+        <view class="titleDetail">{{item.title}}</view>
+      </view>
     </view>
   </view>
   <view class="back_view">
     <view class="image_view">
-      <image class="image1" src="../../resources/fu2.png"></image>
+      <image class="image1" src="../../../resources/fu2.png"></image>
       <view class="imgLabBtn" wx:for="{{nowList}}">
         <image src="{{item.image}}"></image>
         <view class="centerview">
@@ -54,12 +56,12 @@
       <view class="tit_detail">理财没那么难</view>
     </view>
     <view>
-      <image class="jr_image" src="../../resources/fu2.png"></image>
+      <image class="jr_image" src="../../../resources/fu2.png"></image>
       <view class="e_title">e招贷借钱,立即评测</view>
     </view>
     <view class="scroll_view">
       <view class="" wx:for="{{gudkList}}">
-        <image class="sjge_image" src="../../resources/fu2.png"></image>
+        <image class="sjge_image" src="../../../resources/fu2.png"></image>
         <view>{{item.title}}</view>
         <view class="titleDetail">{{item.subTitle}}</view>
       </view>

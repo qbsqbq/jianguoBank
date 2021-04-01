@@ -6,7 +6,7 @@ Page({
    */
   data: {
     list: [
-      { id: 0, title: '贷款界面一', path: '../nkxxLoans/nkxxLoans' },
+      { id: 0, title: '贷款界面一', path: '../bankLoans/nkxxLoans/nkxxLoans' },
       { id: 1, title: '贷款界面二', path: '../bankLoans/loans/loans' },
       { id: 2, title: '获取手机号授权', path: '../getPhoneNum/getPhoneNum' },
       { id: 3, title: '招商银行信用卡', path: '../creditCard/creditCard' },
