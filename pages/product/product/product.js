@@ -5,14 +5,23 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+   newsList=[],
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    wx.request({
+      url: 'http://v.juhe.cn/toutiao/index?type=top&key=bbbd6684c96ca7d14663691f0b0922f4',
+      success:res=>{
+        this.setData({
+          
+          newsList:res.data
+        })
+      }
+      
+    })
   },
 
   /**
