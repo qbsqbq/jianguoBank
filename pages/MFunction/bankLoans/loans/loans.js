@@ -1,6 +1,6 @@
 // pages/bankLoans/loans/loans.js
-const util = require('../../../utils/util.js')
-const Request = require('../../../utils/request')
+const util = require('../../../../utils/util')
+const Request = require('../../../../utils/request')
 
 Page({
   data: {

@@ -1,32 +1,22 @@
-// pages/functionList/functionList.js
+// pages/MFunction/webView/webView.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    list: [
-      { id: 0, title: '贷款界面一', path: '../nkxxLoans/nkxxLoans' },
-      { id: 1, title: '贷款界面二', path: '../bankLoans/loans/loans' },
-      { id: 2, title: '获取手机号授权', path: '../getPhoneNum/getPhoneNum' },
-      { id: 3, title: '招商银行信用卡', path: '../creditCard/creditCard' },
-    ],
-  },
-
-  //事件处理函数
-  itemClick(e) {
-    var that = this;
-    var url = that.data.list[parseInt(e.currentTarget.id)].path;
-    wx.navigateTo({
-      url: url,
-    })
+    weburl: ''
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    var weburl = decodeURIComponent(options.weburl)
+    console.log(weburl)
+    this.setData({
+      weburl: weburl
+    })
   },
 
   /**

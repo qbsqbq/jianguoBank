@@ -26,7 +26,7 @@
     <view class="borrowMoney">
       <view class="bighdkrView">
         <view class="hdkrView">
-          <image class="leftImage" src="../../resources/cardImage.png"></image>
+          <image class="leftImage" src="../../../../resources/cardImage.png"></image>
           <view>
             <view class="centerUp">应还借款</view>
             <view class="centerDown">按时还款，保持良好征信</view>
