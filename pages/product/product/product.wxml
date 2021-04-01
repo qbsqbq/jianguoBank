@@ -1,27 +1,54 @@
-<!--头部-->
+<view class="wimdow">
+  <!--头部-->
+  <view class="headImg">
+    <image class="img" src="/resources/produc/headImage.png" mode="aspectFill" bindtap="goLoin" >
+    </image>
+  </view>
 
-<!--item-->
-<view class="menu">
-  <view class="button" wx:for="{{menus}}" wx:key="meunId" bind:tap="selectMenu" data-title="{{item.title}}">
-    <image src="{{item.icon}}" />
-    <view>{{item.title}}</view>
+  <!--全部卡片-->
+<view class="moreBtn" bindlongtap="goAllCardsPage">
+   <text class="moretitle" >全部卡片</text>
+   <image src="/resources/produc/jiantou_r.png" class="jiantou"></image>
+</view>
+
+  <!--item-->
+  <view class="menu">
+    <view class="button" wx:for="{{menus}}" wx:key="meunId" bind:tap="selectMenu" data-title="{{item.title}}">
+      <image src="{{item.icon}}" />
+      <view>{{item.title}}</view>
+    </view>
+  </view>
+
+  <!--轮播图-->
+  <view class="banar">
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}"
+      indicator-color="{{indicatorColor}}" indicator-active-color="{{activeColor}}" circular="{{circuLar}}"
+      easing-function="{{easingFunction}}">
+      <block wx:for="{{imgUrls}}">
+
+        <swiper-item>
+          <navigator url="{{item.path}}" hover-class="navigator-hover">
+            <image src="{{item.url}}" class="slide-image" width="355" height="200" mode="aspectFill" />
+          </navigator>
+        </swiper-item>
+
+      </block>
+
+    </swiper>
+  </view>
+
+    <!--资讯-->
+<view class="zixunTitle">资讯</view>
+
+<view class="newsItem" wx:for="{{4}}">
+  <view class="wenzi">
+    <view class="newsTitle">这是标题</view>
+  <view class="newsTime">2021-3-24</view>
+  </view>
+ 
+  <view class="newsImgview">
+    <image src="/resources/produc/rmhd.png" class="newsImage"></image>
   </view>
 </view>
 
-<!--轮播图-->
-<view class="banar">
-  <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}"
-    indicator-color="{{indicatorColor}}" indicator-active-color="{{activeColor}}" circular="{{circuLar}}"
-    easing-function="{{easingFunction}}">
-    <block wx:for="{{imgUrls}}">
-
-      <swiper-item>
-        <navigator url="{{item.path}}" hover-class="navigator-hover">
-          <image src="{{item.url}}" class="slide-image" width="355" height="200"  mode="aspectFill"/>
-        </navigator>
-      </swiper-item>
-
-    </block>
-
-  </swiper>
 </view>
