@@ -1,6 +1,6 @@
 // pages/bankLoans/loans/loans.js
-const util = require('../../../utils/util.js')
-const Request = require('../../../utils/request')
+const util = require('../../../../utils/util')
+const Request = require('../../../../utils/request')
 
 Page({
   data: {
@@ -48,7 +48,7 @@ Page({
   //   }
   //   var obj = JSON.stringify(myObj);
     wx.navigateTo({
-      url: '../../login/login'
+      url: '../../nkxxLoans/nkxxLoans'
     })
   },
 
@@ -80,11 +80,11 @@ Page({
     if (this.data.listArr.length < this.data.TotalNum) {
       // this.requestData()
     }else{
-      wx.showToast({
-        title: '没有更多数据了',
-        icon: 'none',
-        duration: 1000
-      })
+      // wx.showToast({
+      //   title: '没有更多数据了',
+      //   icon: 'none',
+      //   duration: 1000
+      // })
     }
   }
 

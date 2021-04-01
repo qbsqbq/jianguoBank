@@ -42,30 +42,32 @@
   "compileType": "miniprogram",
   "libVersion": "2.16.0",
   "appid": "wx3afd4cd618216448",
-  "projectname": "HHBankLoan",
+  "projectname": "jianguoBank",
   "debugOptions": {
     "hidedInDevtools": []
   },
   "scripts": {},
   "isGameTourist": false,
+  "simulatorType": "wechat",
+  "simulatorPluginLibVersion": {},
   "condition": {
-    "search": {
-      "list": []
-    },
-    "conversation": {
+    "plugin": {
       "list": []
     },
     "game": {
-      "list": []
-    },
-    "plugin": {
       "list": []
     },
     "gamePlugin": {
       "list": []
     },
     "miniprogram": {
-      "list": []
+      "list": [
+        {
+          "name": "product",
+          "pathName": "pages/product/product/product",
+          "scene": null
+        }
+      ]
     }
   }
 }

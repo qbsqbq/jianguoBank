@@ -1,0 +1,83 @@
+<!--pages/creditCard/creditCard.wxml-->
+<!-- <text>pages/creditCard/creditCard.wxml</text> -->
+
+<view>
+  <!-- <image class="topImage" src="../../resources/fu2.png"></image>
+  <view class="topView">
+    <view class="uxkaView">刷卡支付</view>
+    <view class="uxkadetail">就选招商银行信用卡</view>
+  </view> -->
+  <view class="threeItem">
+    <view class="imageTitle" wx:for="{{topList}}">
+      <image class="smallImage" src="{{item.image}}"></image>
+      <view>{{item.title}}</view>
+      <view class="titleDetail">{{item.subTitle}}</view>
+    </view>
+  </view>
+  <view class="itemView">
+    <view class="imgLabel" wx:for="{{itemList}}">
+      <view bindtap="itemClick" data-weburl="{{item.weburl}}">
+        <image class="smallimg" src="{{item.icon}}"></image>
+        <view class="titleDetail">{{item.title}}</view>
+      </view>
+    </view>
+  </view>
+  <view class="back_view">
+    <view class="image_view">
+      <image class="image1" src="../../../resources/fu2.png"></image>
+      <view class="imgLabBtn" wx:for="{{nowList}}">
+        <image src="{{item.image}}"></image>
+        <view class="centerview">
+          <view class="img_title">{{item.title}}</view>
+          <view class="img_subtitle">{{item.date}}</view>
+          <view class="text_sub">{{item.price}}</view>
+        </view>
+        <view class="rightTitle">
+          <view class="right_subtitle">{{item.havGet}}</view>
+          <view class="lijiqlBtn">立即抢</view>
+        </view>
+      </view>
+    </view>
+    <view class="title_view">
+      <view>卡达人</view>
+      <view class="tit_detail">办卡最在行</view>
+    </view>
+    <scroll-view scroll-x>
+      <view class="scroll_view">
+        <view class="item_v" wx:for="{{scrollOneList}}">
+          <image class="scroll_image" src="{{item.image}}"></image>
+          <view>{{item.title}}</view>
+          <view class="titleDetail">{{item.subTitle}}</view>
+        </view>
+      </view>
+    </scroll-view>
+    <view class="title_view">
+      <view>金融理财</view>
+      <view class="tit_detail">理财没那么难</view>
+    </view>
+    <view>
+      <image class="jr_image" src="../../../resources/fu2.png"></image>
+      <view class="e_title">e招贷借钱,立即评测</view>
+    </view>
+    <view class="scroll_view">
+      <view class="" wx:for="{{gudkList}}">
+        <image class="sjge_image" src="../../../resources/fu2.png"></image>
+        <view>{{item.title}}</view>
+        <view class="titleDetail">{{item.subTitle}}</view>
+      </view>
+    </view>
+    <view class="title_view">
+      <view>生活保障</view>
+      <view class="tit_detail">为你的生活保驾护航</view>
+    </view>
+    <scroll-view scroll-x>
+      <view class="scroll_view">
+        <view class="item_v" wx:for="{{scrollTwoList}}">
+          <image class="scroll_image" src="{{item.image}}"></image>
+          <view>{{item.title}}</view>
+          <view class="titleDetail">{{item.subTitle}}</view>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+</view>

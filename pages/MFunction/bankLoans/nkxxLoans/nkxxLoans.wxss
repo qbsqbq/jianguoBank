@@ -1,0 +1,177 @@
+/* pages/nkxxLoans/nkxxLoans.wxss */
+
+
+
+Page {
+  /* background: #eee; */
+  background: rgb(237, 238, 238);
+}
+
+.backView {
+  background-color: #FF0000;
+  width: 200%;
+  height: 100px;
+  margin-left: -50%;
+  padding: 20px 10px;
+  border-radius: 0 0 100% 100%;
+}
+
+.itemView {
+  background: white;
+  height: 185px;
+  margin:  0 15px;
+  margin-top: -120px;
+  border-radius: 10px;
+}
+.mainView {
+  margin: 0 20px;
+}
+.titleView {
+  padding: 15px 0;
+  display: flex;
+}
+.leftTitle {
+  font-size: 16px;
+}
+.rightTitle {
+  background-color: #FF0000;
+  color: white;
+  text-align: center;
+  font-size: 12px;
+  border-radius: 8px 0;
+  padding: 3px 5px;
+  margin: 0 5px;
+}
+.limitView {
+  width: 100%;
+  font-size: 14px;
+  padding: 3px 0;
+}
+.moneyView {
+  display: flex;
+  height: 30px;
+  line-height: 30px;
+  padding: 10px 0;
+  justify-content: space-between;
+}
+.leftMoney {
+  color: #FF0000;
+  font-size: 35px;
+  font-weight: bold;
+}
+.rightBtn {
+  background-color: #FF0000;
+  padding: 0 15px;
+  color: white;
+  text-align: center;
+  font-size: 15px;
+  border-radius: 20px;
+}
+.detailView {
+  display: flex;
+  margin: 10px 0;
+}
+.labelView {
+  background-color: rgb(250, 219, 219);
+  color: #FF0000;
+  font-size: 10px;
+  margin-right: 3px;
+  padding: 1px 2px;
+}
+
+
+.borrowMoney {
+  background: white;
+  margin:  15px;
+  border-radius: 10px;
+}
+.bighdkrView {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+}
+.hdkrView {
+  display: flex;
+  align-items: center;
+}
+.leftImage {
+  width: 30px;
+  height: 30px;
+  margin-left: 10px;
+  padding: 10px;
+}
+.centerUp {
+  color: black;
+}
+.centerDown {
+  font-size: 10px;
+  color: gray;
+}
+.hdkrBtn {
+  border: 1px solid lightgray;
+  border-radius: 20px;
+  margin-right: 20px;
+  padding: 2px 8px;
+  font-size: 13px;
+  background-color: white;
+  color: rgb(235, 78, 78);
+}
+
+
+
+.itemView1 {
+  background: white;
+  margin:  15px;
+  border-radius: 2px;
+}
+.titleView {
+  padding: 15px 0;
+  display: flex;
+}
+.leftTitle1 {
+  color: black;
+  font-size: 16px;
+}
+.rightTitle1 {
+  background-color: #FF0000;
+  color: white;
+  text-align: center;
+  font-size: 12px;
+  border-radius: 8px 0;
+  padding: 3px 5px;
+  margin-left: 5px;
+}
+.moneyView1 {
+  display: flex;
+  justify-content: space-between;
+}
+.limitView1 {
+  width: 100%;
+  font-size: 12px;
+  padding: 6px 0;
+}
+.labelColor {
+  color: #FF0000;
+}
+.rightBtn1 {
+  background-color: #FF0000;
+  width: 28%;
+  height: 30px;
+  line-height: 30px;
+  padding: 0 10px;
+  color: white;
+  text-align: center;
+  font-size: 12px;
+  border-radius: 20px;
+}
+.labelView1 {
+  background-color: rgb(250, 219, 219);
+  color: #FF0000;
+  font-size: 10px;
+  margin-right: 3px;
+  margin-bottom: 10px;
+  padding: 1px 2px;
+}
+
+

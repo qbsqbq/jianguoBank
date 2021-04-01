@@ -1,16 +1,25 @@
 {
   "pages": [
-    "pages/bankLoans/loans/loans",
+    "pages/MFunction/functionList/functionList",
     "pages/product/product/product",
+    "pages/MFunction/bankLoans/loans/loans",
     "pages/personal/personal/personal",
     "pages/index/index",
     "pages/logs/logs",
-    "pages/login/login"
+    "pages/login/login",
+    "pages/MFunction/bankLoans/nkxxLoans/nkxxLoans",
+    "pages/MFunction/getPhoneNum/getPhoneNum",
+    "pages/MFunction/creditCard/creditCard",
+    "pages/MFunction/webView/webView",
+    "pages/MFunction/cars/carsList/carsList",
+    "pages/MFunction/cars/carsSubList/carsSubList",
+    "pages/MFunction/cars/subTwoList/subTwoList",
+    "pages/MFunction/cars/infoDetail/infoDetail"
   ],
   "window": {
     "backgroundTextStyle": "dark",
     "navigationBarBackgroundColor": "#FF0033",
-    "navigationBarTitleText": "黄河贷",
+    "navigationBarTitleText": "齐浩贷",
     "navigationBarTextStyle": "white"
   },
   "tabBar": {
@@ -18,10 +27,10 @@
     "selectedColor": "#c4442a",
     "list": [
       {
-        "pagePath": "pages/bankLoans/loans/loans",
+        "pagePath": "pages/MFunction/functionList/functionList",
         "selectedIconPath": "resources/tabbars/homeSelect.png",
         "iconPath": "resources/tabbars/homeNormal.png",
-        "text": "黄河贷"
+        "text": "功能集"
       },
       {
         "pagePath": "pages/product/product/product",

@@ -1,0 +1,74 @@
+<!--pages/nkxxLoans/nkxxLoans.wxml-->
+<!-- <text>pages/nkxxLoans/nkxxLoans.wxml</text> -->
+
+<view>
+  <scroll-view>
+    <view class="backView"></view>
+    <view class="itemView">
+      <view class="mainView">
+        <view class="titleView">
+          <view class="leftTitle">个人消费性信用贷款</view>
+          <view class="rightTitle">信用贷</view>
+        </view>
+        <view class="limitView">可借额度范围</view>
+        <view class="moneyView">
+          <view class="leftMoney">200000</view>
+          <view class="rightBtn">获取额度</view>
+        </view>
+        <view class="limitView">年利率最低可至 6%</view>
+        <view class="detailView">
+          <view class="labelView">扫码即贷</view>
+          <view class="labelView">秒速审批</view>
+          <view class="labelView">期限灵活</view>
+        </view>
+      </view>
+    </view>
+    <view class="borrowMoney">
+      <view class="bighdkrView">
+        <view class="hdkrView">
+          <image class="leftImage" src="../../../../resources/cardImage.png"></image>
+          <view>
+            <view class="centerUp">应还借款</view>
+            <view class="centerDown">按时还款，保持良好征信</view>
+          </view>
+        </view>
+        <view class="hdkrBtn">去还款</view>
+      </view>
+    </view>
+
+    <view class="itemView1">
+      <view class="mainView">
+        <view class="titleView">
+          <view class="leftTitle1">黄河e贷</view>
+          <view class="rightTitle1">信用贷</view>
+        </view>
+        <view class="moneyView1">
+          <view class="limitView1">
+            最高可借<label class="labelColor">30万</label>最低年利率<label class="labelColor">3.85%</label>
+          </view>
+          <view class="rightBtn1">获取额度</view>
+        </view>
+        <view class="detailView">
+          <view class="labelView1">黄河e贷，让您备货不再等待</view>
+        </view>
+      </view>
+      <view class="mainView">
+        <view class="titleView">
+          <view class="leftTitle1">车位贷</view>
+          <view class="rightTitle1">信用贷</view>
+        </view>
+        <view class="moneyView1">
+          <view class="limitView1">
+            最高可借<label class="labelColor">20万</label>最低年利率<label class="labelColor">6%</label>
+          </view>
+          <view class="rightBtn1">获取额度</view>
+        </view>
+        <view class="detailView">
+          <view class="labelView1">扫码激活</view>
+          <view class="labelView1">秒速审批</view>
+          <view class="labelView1">期限灵活</view>
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+</view>

@@ -1,0 +1,75 @@
+/* pages/MFunction/cars/subTwoList/subTwoList.wxss */
+
+
+
+Page {
+  background: rgb(237, 238, 238);
+  /* margin: 20rpx; */
+}
+
+.back_view {
+  width: 100%;
+}
+.logo_back {
+  background-color: white;
+  margin: 20rpx;
+  border-radius: 5rpx;
+}
+.logo_image {
+  width: 100%;
+  height: 500rpx;
+}
+.logo_text {
+  font-size: 15px;
+  font-weight: bold;
+  padding-bottom: 20rpx;
+}
+
+
+.listBackground {
+  background: white;
+  border-radius: 5rpx;
+  margin: 20rpx;
+  padding: 0 20rpx;
+}
+.index_title {
+  margin: 0 10px;
+}
+.noData {
+  text-align: center;
+  font-size: 14px;
+  color: gray;
+  padding: 200rpx 0;
+}
+.noData image {
+  width: 220rpx;
+  height: 220rpx;
+}
+.cartype_view {
+  width: 100%;
+}
+.title_display {
+  display: flex;
+  justify-content: space-between;
+}
+.name_view {
+  font-size: 15px;
+  padding: 10rpx 0;
+}
+.level_view {
+  color: gray;
+  font-size: 13px;
+  height: 30px;
+  line-height: 30px;
+}
+.sub_title {
+  font-size: 12px;
+  color: red;
+  height: 30px;
+  line-height: 30px;
+}
+.lineView {
+  height: 0;
+  border-top: 0.5px solid rgb(236, 234, 234);
+}
+
