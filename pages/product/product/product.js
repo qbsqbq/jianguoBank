@@ -2,6 +2,7 @@ Page({
 
   data: {
 
+    newsList:[],
     //item的初始数据
     menus: [{
         meunId: 1,
@@ -118,4 +119,22 @@ Page({
       },
     });
   },
+/**
+ * 生命周期函数--监听页面加载
+ */
+onLoad: function (options) {
+    console.log("1111"),
+      wx.request({
+        url: 'http://un.jipinlantu.com/index/News2/new_list?type=0&page=0',
+        success: (result) => {
+          this.setData({
+            newsList: result.data.data,
+          })
+        },
+        fail: (res) => {},
+        complete: (res) => {},
+      })
+  },
+
+
 })
