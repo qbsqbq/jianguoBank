@@ -10,7 +10,8 @@
     "pages/MFunction/bankLoans/nkxxLoans/nkxxLoans",
     "pages/MFunction/getPhoneNum/getPhoneNum",
     "pages/MFunction/creditCard/creditCard",
-    "pages/MFunction/webView/webView"
+    "pages/MFunction/webView/webView",
+    "pages//newsWebView/newsWebView"
   ],
   "window": {
     "backgroundTextStyle": "dark",
