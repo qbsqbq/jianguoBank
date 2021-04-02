@@ -1,1 +1,37 @@
 /* pages/MFunction/cars/infoDetail/infoDetail.wxss */
+
+
+Page {
+  background: rgb(237, 238, 238);
+  /* margin: 20rpx; */
+}
+.listBackground {
+  background: white;
+  margin:  8px;
+  padding: 20rpx;
+  border-radius: 5rpx;
+}
+.listhdkrView {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.logoUrl {
+  width: 120rpx;
+  height: 120rpx;
+  padding: 10rpx;
+}
+.name_view {
+  padding: 10rpx;
+  font-weight: bold;
+}
+.level_view {
+  padding: 10rpx;
+  font-size: 13px;
+}
+.sub_title {
+  font-size: 13px;
+  color: gray;
+  text-indent: 2em;
+  line-height: 30px;
+}

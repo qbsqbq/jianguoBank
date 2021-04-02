@@ -6,9 +6,15 @@ Page {
   background: rgb(237, 238, 238);
 }
 
+.scrview {
+  margin: 0 20rpx;
+  padding-bottom: 20rpx;
+}
 .scroll_view {
   background-color: white;
-  /* margin: 0 20rpx; */
+  width: 100%;
+  margin-top: 20rpx;
+  border-radius: 10rpx;
 }
 .scroll {
   display: flex;

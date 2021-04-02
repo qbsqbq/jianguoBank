@@ -73,3 +73,26 @@ Page {
   border-top: 0.5px solid rgb(236, 234, 234);
 }
 
+.scrview {
+  margin: 0 20rpx;
+  padding-bottom: 20rpx;
+}
+.scroll_view {
+  background-color: white;
+  width: 100%;
+  border-radius: 5rpx;
+}
+.scroll {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+.small_name {
+  font-size: 10px;
+  color: gray;
+  width: 180rpx;
+}
+.scroll_image {
+  width: 100rpx;
+  height: 100rpx;
+}

@@ -1,0 +1,31 @@
+<!--pages/MFunction/cars/salesList/salesList.wxml-->
+<!-- <text>pages/MFunction/cars/salesList/salesList.wxml</text> -->
+
+<view>
+  <view class="listBackground">
+    <view wx:if="{{!carList.length}}" class="noData">
+      <image src="../../../../resources/noData.png"></image>
+      <view>暂无数据</view>
+    </view>
+  </view>
+  <view class="listBackground">
+    <view wx:if="{{carList.length}}" class="cartype_view" wx:for="{{carList}}" wx:key="dealerId">
+    <view>
+      <view class="name_view">{{item.cityName}}  {{item.shortName}}</view>
+      <text class="level_view">{{item.simpleProfile}}</text>
+      <view class="sub_title">指导价:{{item.guidePrice/10000}}万 最低价:{{item.minPrice/10000}}万</view>
+      <view class="level_view">{{item.address}}</view>
+      <view class="level_view">服务热线: <text class="phoneText" bindtap="callPhone" data-phone="{{item.phoneNumber}}">{{item.phoneNumber}}</text></view>
+    </view>
+    <view class="bottomText">
+      <text class="text_view">{{item.year}}款</text>
+      <text class="text_view">{{item.type}}</text>
+      <text class="text_view" wx:if="item.is24Hour">24小时服务</text>
+      <text class="text_view">{{item.saleArea}}</text>
+      <text class="text_view">{{item.cartypeName}}</text>
+    </view>
+    <view class="lineView"></view>
+    </view>
+  </view>
+</view>
+

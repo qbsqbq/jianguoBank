@@ -1,19 +1,35 @@
-// pages/MFunction/cars/infoDetail/infoDetail.js
+// pages/MFunction/cars/salesList/salesList.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    topDic: {}
+    carList: []
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    this.setData({
-      topDic: JSON.parse(decodeURIComponent(options.topdic))
+    var that = this
+    wx.request({
+      url: 'http://price.cartype.kakamobi.com/api/open/car-type-price/get-car-type-price-list.htm?limit=10&orderField=2&orderType=1&cartypeId='+options.cartypeid,
+      success (res) {
+        if (res.data.data.length) {
+          that.setData({
+            carList: res.data.data
+          })
+        }
+      }
+    })
+  },
+
+  // 拨打电话
+  callPhone (e) {
+    let phone = e.currentTarget.dataset.phone
+    wx.makePhoneCall({
+      phoneNumber: phone,
     })
   },
 

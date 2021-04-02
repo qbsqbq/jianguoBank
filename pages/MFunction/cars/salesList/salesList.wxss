@@ -1,0 +1,63 @@
+/* pages/MFunction/cars/salesList/salesList.wxss */
+
+
+Page {
+  background: rgb(237, 238, 238);
+}
+
+.listBackground {
+  background: white;
+  border-radius: 5rpx;
+  margin: 20rpx;
+  padding: 0 20rpx;
+}
+.noData {
+  text-align: center;
+  font-size: 14px;
+  color: gray;
+  padding: 500rpx 0;
+}
+.noData image {
+  width: 220rpx;
+  height: 220rpx;
+}
+.cartype_view {
+  width: 100%;
+}
+.title_display {
+  display: flex;
+  justify-content: space-between;
+}
+.name_view {
+  font-size: 15px;
+  font-weight: bold;
+  padding: 10rpx 0;
+}
+.level_view {
+  color: gray;
+  font-size: 13px;
+  line-height: 30px;
+}
+.phoneText {
+  color: rgb(137, 197, 250);
+}
+.sub_title {
+  font-size: 12px;
+  color: red;
+  height: 30px;
+  line-height: 30px;
+}
+.bottomText {
+  padding-bottom: 20rpx;
+}
+.text_view {
+  background-color: rgb(158, 201, 226);
+  padding: 5rpx 10rpx;
+  margin-right: 10rpx;
+  color: white;
+  font-size: 20rpx;
+}
+.lineView {
+  height: 0;
+  border-top: 0.5px solid rgb(236, 234, 234);
+}

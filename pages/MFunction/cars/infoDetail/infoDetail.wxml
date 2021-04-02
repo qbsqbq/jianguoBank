@@ -1,3 +1,19 @@
 <!--pages/MFunction/cars/infoDetail/infoDetail.wxml-->
 <!-- <text>pages/MFunction/cars/infoDetail/infoDetail.wxml</text> -->
 
+<view>
+  <view class="listBackground">
+    <view class="listhdkrView">
+      <image class="logoUrl" src="{{topDic.logoUrl}}"></image>
+      <view class="name_view">{{topDic.factoryName}} {{topDic.serialName}}</view>
+    </view>
+    <view>
+      <view class="level_view">{{topDic.version}} {{topDic.level}}</view>
+      <view class="level_view">{{topDic.bodyStruct}} {{topDic.displacement}}</view>
+      <view class="level_view">{{topDic.priceName}}: {{topDic.maxGuidePrice/10000}}万-{{topDic.maxGuidePrice/10000}}万</view>
+    </view>
+  </view>
+  <view class="listBackground">
+    <view class="sub_title">{{topDic.description}}</view>
+  </view>
+</view>

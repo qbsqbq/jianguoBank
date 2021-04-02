@@ -5,7 +5,7 @@
 <view>
   <view class="back_view">
     <view class="logo_back">
-      <image class="logo_image" src="{{topDic.coverImgUrl}}" bindtap="imageTap"></image>
+      <image class="logo_image" src="{{topDic.coverImgUrl}}" bindtap="imageTap" data-topdic="{{topDic}}"></image>
       <view class="logo_text">{{topDic.serialName}}</view>
     </view>
   </view>
@@ -18,7 +18,7 @@
   <view wx:for="{{carList}}" wx:key="firstLetter">
     <view class="index_title">{{item.name}}</view>
     <view class="listBackground">
-      <view class="cartype_view" wx:for="{{item.cartypes}}" wx:key="id" bindtap="itemClick" data-id="{{item.id}}" data-imgurl="{{item.imgUrl}}">
+      <view class="cartype_view" wx:for="{{item.cartypes}}" wx:key="id" bindtap="itemClick" data-cartypeid="{{item.cartypeId}}">
       <view>
         <view class="name_view">{{item.year}}款 {{item.name}}</view>
         <view class="level_view">{{item.shortInfo}}</view>
@@ -28,4 +28,16 @@
       </view>
     </view>
   </view>
+
+  <view class="scrview">
+    <scroll-view class="scroll_view" scroll-x>
+      <view class="scroll">
+        <view wx:for="{{bottomList}}" wx:key="{{item.id}}" data-id="{{item.id}}" bindtap="topItemClick">
+          <image class="scroll_image" src="{{item.logoUrl}}"></image>
+          <view class="small_name">{{item.serialName}}</view>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+
 </view>

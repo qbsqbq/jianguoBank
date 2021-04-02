@@ -7,7 +7,8 @@ Page({
   data: {
     imgUrl: '',
     topDic: {},
-    carList: []
+    carList: [],
+    bottomList: []
   },
 
   /**
@@ -16,11 +17,10 @@ Page({
   onLoad: function (options) {
     var that = this
     var id = decodeURIComponent(options.id)
+    // 获取车辆品牌信息
     wx.request({
       url: 'http://price.cartype.kakamobi.com/api/open/car-type-basic/get-serial-base-info.htm?serialId='+id,
       success (res) {
-        console.log('1111')
-        console.log(res.data.data)
         if (res.data.data) {
           that.setData({
             topDic: res.data.data
@@ -28,11 +28,10 @@ Page({
         }
       }
     })
+    // 获取车型列表信息
     wx.request({
       url: 'http://price.cartype.kakamobi.com/api/open/car-serial-price/get-car-category-price.htm?serialId='+id,
       success (res) {
-        console.log('2222')
-        console.log(res.data.data)
         if (res.data.data.saleCategory.length) {
           that.setData({
             carList: res.data.data.saleCategory
@@ -40,29 +39,30 @@ Page({
         }
       }
     })
+    // 获取底部相关车型
+    wx.request({
+      url: 'http://price.cartype.kakamobi.com/api/open/car-type-basic/get-compete-car-serial.htm?serialId='+id,
+      success (res) {
+        if (res.data.data.length) {
+          that.setData({
+            bottomList: res.data.data
+          })
+        }
+      }
+    })
   },
 
   imageTap (e) {
-    let id = e.currentTarget.dataset.id
-    let imgurl = e.currentTarget.dataset.imgurl
-    let obj = {
-      id: id,
-      imgurl: imgurl
-    }
+    var topdic = e.currentTarget.dataset.topdic
     wx.navigateTo({
-      url: '../infoDetail/infoDetail?obj=' + encodeURIComponent(JSON.stringify(obj))
+      url: '../infoDetail/infoDetail?topdic=' + encodeURIComponent(JSON.stringify(topdic))
     })
   },
 
   itemClick (e) {
-    let id = e.currentTarget.dataset.id
-    let imgurl = e.currentTarget.dataset.imgurl
-    let obj = {
-      id: id,
-      imgurl: imgurl
-    }
+    let cartypeid = e.currentTarget.dataset.cartypeid
     wx.navigateTo({
-      url: '../infoDetail/infoDetail?obj=' + encodeURIComponent(JSON.stringify(obj))
+      url: '../salesList/salesList?cartypeid=' + encodeURIComponent(cartypeid)
     })
   },
 

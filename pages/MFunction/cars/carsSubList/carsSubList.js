@@ -22,7 +22,6 @@ Page({
     wx.request({
       url: 'http://price.cartype.kakamobi.com/api/open/car-type-basic/get-grouped-serial-list.htm?type=0&brandId='+obj.id,
       success (res) {
-        console.log(res.data)
         if (res.data.data.length) {
           that.setData({
             subDic: res.data.data[0],

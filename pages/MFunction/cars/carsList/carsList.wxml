@@ -3,7 +3,7 @@
 
 
 <view>
-  <view>
+  <view class="scrview">
     <scroll-view class="scroll_view" scroll-x>
       <view class="scroll">
         <view wx:for="{{topList}}" wx:key="{{item.id}}" data-id="{{item.id}}" bindtap="topItemClick">
