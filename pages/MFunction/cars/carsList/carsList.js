@@ -14,12 +14,17 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    console.log('jxzd')
     var that = this
+    wx.showNavigationBarLoading()
+    wx.showLoading({
+      title: '加载中...'
+    });
     wx.request({
       url: 'http://price.cartype.kakamobi.com/api/open/car-type-basic/get-hot-serial-list.htm',
       success (res) {
         console.log(res)
+        wx.hideNavigationBarLoading()
+        wx.hideLoading();
         if (res.data.data.length) {
           that.setData({
             topList: res.data.data

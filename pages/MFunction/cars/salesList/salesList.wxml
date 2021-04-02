@@ -9,7 +9,7 @@
     </view>
   </view>
   <view class="listBackground">
-    <view wx:if="{{carList.length}}" class="cartype_view" wx:for="{{carList}}" wx:key="dealerId">
+    <view wx:if="{{carList.length}}" class="cartype_view" wx:for="{{carList}}" wx:key="dealerId" bindtap="itemClick" data-coordinate="{{item.coordinate}}" data-shortname="{{item.shortName}}">
     <view>
       <view class="name_view">{{item.cityName}}  {{item.shortName}}</view>
       <text class="level_view">{{item.simpleProfile}}</text>

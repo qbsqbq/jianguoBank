@@ -33,6 +33,19 @@ Page({
     })
   },
 
+  // 跳转
+  itemClick (e) {
+    let coordinate = e.currentTarget.dataset.coordinate
+    let shortname = e.currentTarget.dataset.shortname
+    let obj = {
+      coordinate: coordinate,
+      shortname: shortname
+    }
+    wx.navigateTo({
+      url: '../mapView/mapView?obj=' + encodeURIComponent(JSON.stringify(obj)),
+    })
+  },
+
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
