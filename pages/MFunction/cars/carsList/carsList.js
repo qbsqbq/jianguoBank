@@ -22,7 +22,6 @@ Page({
     wx.request({
       url: 'http://price.cartype.kakamobi.com/api/open/car-type-basic/get-hot-serial-list.htm',
       success (res) {
-        console.log(res)
         wx.hideNavigationBarLoading()
         wx.hideLoading();
         if (res.data.data.length) {

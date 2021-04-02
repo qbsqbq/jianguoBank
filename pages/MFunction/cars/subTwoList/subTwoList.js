@@ -59,10 +59,19 @@ Page({
     })
   },
 
-  itemClick (e) {
+  // 点击列表item
+  listItemClick (e) {
     let cartypeid = e.currentTarget.dataset.cartypeid
     wx.navigateTo({
       url: '../salesList/salesList?cartypeid=' + encodeURIComponent(cartypeid)
+    })
+  },
+
+  // 点击底部item
+  bottomItemClick (e) {
+    let serialid = e.currentTarget.dataset.serialid
+    wx.navigateTo({
+      url: '../footerSubView/footerSubView?serialid=' + encodeURIComponent(serialid)
     })
   },
 

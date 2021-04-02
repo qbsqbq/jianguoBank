@@ -1,13 +1,11 @@
-// pages/MFunction/cars/carsSubList/carsSubList.js
+// pages/MFunction/cars/footerSubView/footerSubView.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    imgUrl: '',
-    subDic: {},
-    lists: []
+    bottomList: []
   },
 
   /**
@@ -15,27 +13,17 @@ Page({
    */
   onLoad: function (options) {
     var that = this
-    var obj = JSON.parse(decodeURIComponent(options.obj))
-    that.setData({
-      imgurl: obj.imgurl
-    })
+    // 获取底部相关车型
     wx.request({
-      url: 'http://price.cartype.kakamobi.com/api/open/car-type-basic/get-grouped-serial-list.htm?type=0&brandId='+obj.id,
+      url: 'http://price.cartype.kakamobi.com/api/open/car-type-basic/get-compete-car-serial.htm?serialId=' + options.serialid,
       success (res) {
+        console.log(res.data.data)
         if (res.data.data.length) {
           that.setData({
-            subDic: res.data.data[0],
-            lists: res.data.data
+            bottomList: res.data.data
           })
         }
       }
-    })
-  },
-
-  itemClick (e) {
-    let id = e.currentTarget.dataset.id
-    wx.navigateTo({
-      url: '../subTwoList/subTwoList?id=' + encodeURIComponent(id)
     })
   },
 

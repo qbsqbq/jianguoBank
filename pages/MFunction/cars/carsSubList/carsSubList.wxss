@@ -26,12 +26,13 @@ Page {
   padding-bottom: 20rpx;
 }
 
-
-
 .listBackground {
   background: white;
   margin: 20rpx;
   border-radius: 5rpx;
+}
+.index_title {
+  margin: 0 10px;
 }
 .noData {
   text-align: center;

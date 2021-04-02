@@ -1,0 +1,29 @@
+/* pages/MFunction/cars/footerSubView/footerSubView.wxss */
+
+Page {
+  background: rgb(237, 238, 238);
+}
+
+.back_view {
+  margin: 20rpx;
+}
+.car_view {
+  width: 100%;
+  background-color: white;
+  border-radius: 10rpx;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.img_text {
+  text-align: center;
+  padding: 10rpx;
+}
+.img_view {
+  width: 150rpx;
+  height: 150rpx;
+}
+.text_view {
+  font-size: 12px;
+  width: 200rpx;
+}
