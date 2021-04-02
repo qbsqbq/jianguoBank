@@ -1,0 +1,14 @@
+/* pages/MFunction/cars/mapView/mapView.wxss */
+
+
+.mapView {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 49px;
+  left: 0;
+}
+.map {
+  width: 100%;
+  height: 100%;
+}

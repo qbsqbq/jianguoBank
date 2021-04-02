@@ -1,7 +1,5 @@
 // pages/MFunction/cars/carsList.js
 
-const Request = require('../../../../utils/request')
-
 Page({
 
   /**
@@ -16,6 +14,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    console.log('jxzd')
     var that = this
     wx.request({
       url: 'http://price.cartype.kakamobi.com/api/open/car-type-basic/get-hot-serial-list.htm',

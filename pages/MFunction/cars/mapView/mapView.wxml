@@ -1,0 +1,6 @@
+<!--pages/MFunction/cars/mapView/mapView.wxml-->
+<!-- <text>pages/MFunction/cars/mapView/mapView.wxml</text> -->
+
+<view class='mapView'>
+  <map id='map' class='map' longitude="{{longitude}}" latitude="{{latitude}}" scale="14" controls="{{controls}}" bindcontroltap="controltap" markers="{{markers}}" bindmarkertap="markertap" show-location ></map>
+</view>
