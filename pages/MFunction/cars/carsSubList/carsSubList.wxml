@@ -6,7 +6,6 @@
   <view class="back_view">
     <view class="logo_back">
       <image class="logo_image" src="{{imgurl}}"></image>
-      <view class="logo_text">{{subDic.factoryName}}</view>
     </view>
   </view>
   <view class="listBackground">

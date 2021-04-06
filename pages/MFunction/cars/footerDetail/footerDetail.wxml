@@ -1,0 +1,30 @@
+<!--pages/MFunction/cars/footerDetail/footerDetail.wxml-->
+<!-- <text>pages/MFunction/cars/footerDetail/footerDetail.wxml</text> -->
+
+<view>
+  <!-- <view class="back_view">
+    <view class="logo_back">
+      <image class="logo_image" src="{{topDic.coverImgUrl}}" bindtap="imageTap" data-topdic="{{topDic}}"></image>
+      <view class="logo_text">{{topDic.serialName}}</view>
+    </view>
+  </view> -->
+  <view class="listBackground">
+    <view wx:if="{{!carList.length}}" class="noData">
+      <image src="../../../../resources/noData.png"></image>
+      <view>暂无数据</view>
+    </view>
+  </view>
+  <view wx:for="{{carList}}" wx:key="firstLetter">
+    <view class="index_title">{{item.name}}</view>
+    <view class="listBackground">
+      <view class="cartype_view" wx:for="{{item.cartypes}}" wx:key="id" bindtap="listItemClick" data-cartypeid="{{item.cartypeId}}">
+      <view>
+        <view class="name_view">{{item.year}}款 {{item.name}}</view>
+        <view class="level_view">{{item.shortInfo}}</view>
+        <view class="sub_title">{{item.maxGuidePrice/10000}}万-{{item.maxGuidePrice/10000}}万</view>
+      </view>
+      <view class="lineView"></view>
+      </view>
+    </view>
+  </view>
+</view>

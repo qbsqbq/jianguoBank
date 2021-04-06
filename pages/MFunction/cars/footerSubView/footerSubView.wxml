@@ -5,7 +5,7 @@
 <view>
   <view class="back_view">
     <view class="car_view">
-      <view class="img_text" wx:for="{{bottomList}}" bindtap="itemClick">
+      <view class="img_text" wx:for="{{bottomList}}" bindtap="itemClick" data-serialid="{{item.serialId}}">
         <image class="img_view" src="{{item.logoUrl}}"></image>
         <view class="text_view">{{item.serialName}}</view>
       </view>

@@ -17,7 +17,8 @@
     "pages/MFunction/cars/infoDetail/infoDetail",
     "pages/MFunction/cars/salesList/salesList",
     "pages/MFunction/cars/mapView/mapView",
-    "pages/MFunction/cars/footerSubView/footerSubView"
+    "pages/MFunction/cars/footerSubView/footerSubView",
+    "pages/MFunction/cars/footerDetail/footerDetail"
   ],
   "window": {
     "backgroundTextStyle": "dark",
