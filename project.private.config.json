@@ -1,0 +1,30 @@
+{
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "name": "product",
+          "pathName": "pages/product/product/product",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "小功能全集",
+          "pathName": "pages/MFunction/mixFunc/mixFunc",
+          "query": "",
+          "scene": null,
+          "launchMode": "default"
+        }
+      ]
+    }
+  }
+}

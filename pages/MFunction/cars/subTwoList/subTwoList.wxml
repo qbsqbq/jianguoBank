@@ -32,7 +32,7 @@
   <view class="scrview">
     <scroll-view class="scroll_view" scroll-x>
       <view class="scroll">
-        <view wx:for="{{bottomList}}" wx:key="{{item.id}}" data-serialid="{{item.serialId}}" bindtap="bottomItemClick">
+        <view wx:for="{{bottomList}}" wx:key="id" data-serialid="{{item.serialId}}" bindtap="bottomItemClick">
           <image class="scroll_image" src="{{item.logoUrl}}"></image>
           <view class="small_name">{{item.serialName}}</view>
         </view>

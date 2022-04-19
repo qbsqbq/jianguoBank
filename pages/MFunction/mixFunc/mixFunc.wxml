@@ -1,0 +1,108 @@
+<!--pages/MFunction/mixFunc/mixFunc.wxml-->
+
+
+<view>
+  <!-- 拨打电话 -->
+  <view class="itemView">
+    <view class="inputView">
+      <input class='input' type='number' value='{{inputValue}}' bindinput='inputHandle'></input>
+    </view>
+    <view class="inputView">
+      <button class='callup' bindtap='callupClick'>拨打电话</button>
+    </view>
+  </view>
+
+  <!-- 轮播图 -->
+  <view class="itemView1">
+    <view class="swiperview">
+      <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" indicator-color="green" indicator-active-color="red">
+        <block wx:for="{{imgUrls}}" wx:key='index'>
+          <swiper-item>
+            <image src="{{item}}" class="slide-image" style="height:{{windowWidth * 0.375}}px !important" />
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
+  </view>
+
+  <!-- 生成二维码 -->
+  <view class="itemView">
+    <view class='qrImgbox'>
+      <view style="width: {{windowWidth}}rpx; height: {{windowWidth}}rpx;">
+        <canvas class="canvas" canvas-id='canvas'></canvas>
+      </view>
+      <view class="qrInputView">
+        <input class='qrinput' value="{{qrValue}}" bindinput='qrInputHandle'></input>
+        <!-- <view class='qrinput qrbtncolor' bindtap="qrcodeClick">生成二维码</view> -->
+        <button class='qrinput qrbtncolor' bindtap="qrcodeClick">生成二维码</button>
+      </view>
+    </view>
+  </view>
+
+  <!-- 扫描二维码 -->
+  <view class="itemView1">
+    <view class="buttonView">
+        <button class='scanCode' bindtap='scanButtonClick'>点击扫描二维码</button>
+      </view>
+      <view class='messageView' wx:if="{{scanedMessage != ''}}">
+        <label>{{scanedMessage}}</label>
+      </view>
+  </view>
+
+  <!-- 仿系统segment选择器 -->
+  <view class="itemView">
+    <view style="padding: 30rpx 50rpx;">
+      <radio-group class="radio-group" bindchange="dateChange">
+        <label wx:for="{{dateList}}" wx:key="idx" wx:for-index="idx" class="radio {{ idx === dateIndex ? 'active' : ''}}">
+          <radio class="radio-item" value="{{item.id}}" checked="{{idx===0}}" />{{item.value}}
+        </label>
+      </radio-group>
+    </view>
+    <view style='text-align: center'>{{dateIndex}}</view>
+  </view>
+
+  <!-- 手势密码 -->
+  <view class="itemView1">
+    <view class="lock-title {{titleColor}}">{{title}}</view>
+    <canvas class="gestureCanvas" disable-scroll="true" bindtouchstart="touchstart" bindtouchmove="touchmove" bindtouchend="touchend" canvas-id="locker"></canvas>
+    <view hidden="{{resetHidden}}" bindtap="lockreset" class="lock-reset">重置</view>
+  </view>
+
+  <!-- 自定义segment选择器 -->
+  <view class="itemView1">
+    <view class="page">
+      <view class="page__bd">
+        <view class="weui-tab">
+          <view class="weui-navbar">
+            <block wx:for-items="{{tabs}}" wx:key="index">
+              <view id="{{index}}" class="weui-navbar__item {{activeIndex == index ? 'weui-bar__item_on' : ''}}" bindtap="tabClick">
+                <view class="weui-navbar__title">{{item}}</view>
+              </view>
+            </block>
+            <view class="weui-navbar__slider" style="left: {{sliderLeft}}px; transform: translateX({{sliderOffset}}px); -webkit-transform: translateX({{sliderOffset}}px);"></view>
+          </view>
+          <view class="weui-tab__panel">
+            <view class="weui-tab__content" hidden="{{activeIndex != 0}}">
+              <view class='view1'>第一视图</view>
+            </view>
+            <view class="weui-tab__content" hidden="{{activeIndex != 1}}">
+              <view class='view2'>第二视图</view>
+            </view>
+            <view class="weui-tab__content" hidden="{{activeIndex != 2}}">
+              <view class='view3'>第三视图</view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <!-- 获取手机号授权 -->
+  <view class="itemView">
+    <view class="buttonView">
+      <button open-type="getPhoneNumber" bindtap="getPhoneNumber">获取手机号授权</button>
+    </view>
+  </view>
+
+</view>
+<view style="height: 5px"></view>

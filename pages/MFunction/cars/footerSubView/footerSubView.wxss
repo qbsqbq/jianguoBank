@@ -12,7 +12,7 @@ Page {
   background-color: white;
   border-radius: 10rpx;
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
   flex-wrap: wrap;
 }
 .img_text {

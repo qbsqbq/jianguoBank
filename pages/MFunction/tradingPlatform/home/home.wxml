@@ -1,0 +1,14 @@
+<!--pages/home/home.wxml-->
+
+<view class='mapView'>
+  <map id='map' class='map' longitude="{{longitude}}" latitude="{{latitude}}" scale="14" controls="{{controls}}" bindcontroltap="controltap" markers="{{markers}}" bindmarkertap="markertap" show-location ></map>
+</view>
+
+<view class='tabbar'>
+  <view class='btn release'>
+    <navigator url='../../tradingPlatform/release/release'>发布</navigator>
+  </view>
+  <view class='btn'>
+    <navigator url='../../tradingPlatform/search/search'>搜索</navigator>
+  </view>
+</view>

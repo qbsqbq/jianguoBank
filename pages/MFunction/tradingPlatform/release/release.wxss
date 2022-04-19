@@ -1,0 +1,44 @@
+/* pages/release/release.wxss */
+
+Page{
+  background: #eee;
+}
+.row {
+  overflow: hidden;
+  line-height: 50px;
+  border-bottom: 1px solid #ccc;
+  background: #fff;
+}
+.title {
+  float: left;
+  width: 90px;
+  padding-left: 10px;
+  font-size: 15px;
+  color: gray;
+}
+.address {
+  color: gray;
+  font-size: 15px;
+}
+.input {
+  height: 50px;
+}
+.submit-btn {
+  margin: 10px 8px 0 8px;
+  background: #EE9A00;
+  line-height: 40px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 15px;
+  color: #fff;
+}
+.success {
+  background: #fff;
+  padding: 70px 0;
+  text-align: center;
+}
+.successIcon {
+  position: relative;
+  top: 3px;
+  margin-right: 5px;
+}

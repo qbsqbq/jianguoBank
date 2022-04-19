@@ -49,11 +49,16 @@ Page {
 }
 .bottomText {
   padding-bottom: 20rpx;
+  flex-wrap: wrap;
+
+  display: flex;
+  /* justify-content: flex-start; */
 }
 .text_view {
   background-color: rgb(158, 201, 226);
   padding: 5rpx 10rpx;
   margin-right: 10rpx;
+  margin-bottom: 5rpx;
   color: white;
   font-size: 20rpx;
 }

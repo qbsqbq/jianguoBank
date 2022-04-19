@@ -25,11 +25,11 @@ Page({
   },
   onLoad: function (options) {
     var that = this;
-    let obj = JSON.parse(decodeURIComponent(options.coordinate))
+    let obj = JSON.parse(decodeURIComponent(options.obj))
+    // let obj = JSON.parse(decodeURIComponent(options.coordinate))
     let coordinate = obj.coordinate.split(',')
     let shortname = obj.shortname
     var myAmapFun = new amapFile.AMapWX({ key: apps.gdMapProperties.key });
-    console.log("myAmapFun--->" + myAmapFun);
     that.setData({
       myAmapFun: myAmapFun,
       markers: [{latitude: coordinate[1], longitude: coordinate[0] ,name: shortname}],
@@ -39,8 +39,8 @@ Page({
   },
   //地图上的marker的点击事件
   makertap: function (e) {
-    console.log("marker点击事件");
-    var id = e.markerId;
+    console.log("marker点击事件", e);
+    var id = e.detail.markerId;
     console.log("marker  id = "+id);
     var that = this;
     //显示设备信息
@@ -59,6 +59,7 @@ Page({
       origin:that.data.longitude+","+that.data.latitude,
       destination: that.data.markers[0].longitude + "," + that.data.markers[0].latitude,
       success:function(data){
+        console.log("驾车1==",data)
         //获取当前经纬度信息到目标经纬度信息间无数个经纬度点位
         var points = [];
         if (data.paths && data.paths[0] && data.paths[0].steps) {
@@ -86,8 +87,8 @@ Page({
           }]
         });
       },
-      fail: function (info) {
-
+      fail: function (error) {
+        console.log("驾车2==",error)
       }
     });
   },
@@ -127,8 +128,8 @@ Page({
           }]
         });
       },
-      fail: function (info) {
-
+      fail: function (error) {
+        console.log("步行==",error)
       }
     });
   },

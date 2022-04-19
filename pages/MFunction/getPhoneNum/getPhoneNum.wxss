@@ -1,6 +1,0 @@
-/* pages/getPhoneNum/getPhoneNum.wxss */
-
-
-.phone {
-  margin: 30px 0;
-}

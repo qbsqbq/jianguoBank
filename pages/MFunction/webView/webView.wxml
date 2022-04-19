@@ -1,4 +1,0 @@
-<!--pages/MFunction/webView/webView.wxml-->
-<!-- <text>pages/MFunction/webView/webView.wxml</text> -->
-
-<web-view src="{{weburl}}"></web-view>

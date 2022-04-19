@@ -34,11 +34,11 @@ function jsonToString(json) {
 }
 
 // jsonstring处理, 并去除首位"{"和末位"}"
-function jsonToString(json) {
-  var paramsStr = JSON.stringify(json);
-    paramsStr = paramsStr.substr(1, paramsStr.length-2); 
-    return paramsStr
-}
+// function jsonToString(json) {
+//   var paramsStr = JSON.stringify(json);
+//     paramsStr = paramsStr.substr(1, paramsStr.length-2); 
+//     return paramsStr
+// }
 
 module.exports = {
   formatTime,

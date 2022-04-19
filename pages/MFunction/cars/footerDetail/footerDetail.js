@@ -18,7 +18,7 @@ Page({
     wx.request({
       url: 'http://price.cartype.kakamobi.com/api/open/car-serial-price/get-car-category-price.htm?serialId='+serialid,
       success (res) {
-        console.log(res.data.data)
+        // console.log(res.data.data)
         if (res.data.data.saleCategory.length) {
           that.setData({
             carList: res.data.data.saleCategory

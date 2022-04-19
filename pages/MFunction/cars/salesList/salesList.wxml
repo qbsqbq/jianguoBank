@@ -18,11 +18,11 @@
       <view class="level_view">服务热线: <text class="phoneText" bindtap="callPhone" data-phone="{{item.phoneNumber}}">{{item.phoneNumber}}</text></view>
     </view>
     <view class="bottomText">
-      <text class="text_view">{{item.year}}款</text>
-      <text class="text_view">{{item.type}}</text>
-      <text class="text_view" wx:if="item.is24Hour">24小时服务</text>
-      <text class="text_view">{{item.saleArea}}</text>
-      <text class="text_view">{{item.cartypeName}}</text>
+      <view class="text_view">{{item.year}}款</view>
+      <view class="text_view">{{item.type}}</view>
+      <view class="text_view" wx:if="item.is24Hour">24小时服务</view>
+      <view class="text_view">{{item.saleArea}}</view>
+      <view class="text_view">{{item.cartypeName}}</view>
     </view>
     <view class="lineView"></view>
     </view>

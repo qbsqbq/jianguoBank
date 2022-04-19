@@ -1,8 +1,6 @@
 /* pages/functionList/functionList.wxss */
 
-Page {
-  background: rgb(237, 238, 238);
-}
+
 .listBackground {
   background: white;
   margin:  8px;

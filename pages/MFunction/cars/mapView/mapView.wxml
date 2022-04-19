@@ -12,7 +12,7 @@
     <view class="gotobyDriver" bindtap="gotobyDriver">驾车</view>
     <view class="gotobywalk" bindtap="gotobywalk">步行</view>
   </view>
-  <view wx:for="{{detailSteps}}" class="allStepsView">
+  <view wx:for="{{detailSteps}}" wx:key="index" class="allStepsView">
     <!-- 遍历具体路径信息 -->
     <text>{{item.instruction}}</text>
   </view>

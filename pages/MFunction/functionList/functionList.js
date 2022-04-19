@@ -6,21 +6,20 @@ Page({
    */
   data: {
     list: [
-      { id: 0, title: '贷款界面一', path: '../bankLoans/nkxxLoans/nkxxLoans' },
-      { id: 1, title: '贷款界面二', path: '../bankLoans/loans/loans' },
-      { id: 2, title: '获取手机号授权', path: '../getPhoneNum/getPhoneNum' },
+      { id: 0, title: '小功能全集', path: '../mixFunc/mixFunc' },
+      { id: 1, title: '贷款界面一', path: '../bankLoans/nkxxLoans/nkxxLoans' },
+      { id: 2, title: '贷款界面二', path: '../bankLoans/loans/loans' },
       { id: 3, title: '招商银行信用卡', path: '../creditCard/creditCard' },
-      { id: 4, title: '崛起吧我的车,碾压齐厮之理财', path: '../cars/carsList/carsList' },
-    ],
+      { id: 4, title: '爱车大全', path: '../cars/carsList/carsList' },
+      { id: 5, title: '交易平台', path: '../tradingPlatform/home/home' },
+    ]
   },
 
   //事件处理函数
   itemClick(e) {
     var that = this;
     var url = that.data.list[parseInt(e.currentTarget.id)].path;
-    wx.navigateTo({
-      url: url,
-    })
+    wx.navigateTo({url})
   },
 
   /**

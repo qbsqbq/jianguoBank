@@ -3,7 +3,7 @@
 
 
 <view class="listBackground">
-  <view wx:for="{{list}}" id='{{item.id}}' bindtap="itemClick">
+  <view wx:for="{{list}}" wx:key="id" id='{{item.id}}' bindtap="itemClick">
     <view class="listhdkrView">
       <view class="listLeft">{{item.title}}</view>
       <image class="rightImage" src="../../../resources/arrowRight.png"></image>

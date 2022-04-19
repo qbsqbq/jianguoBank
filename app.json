@@ -7,10 +7,9 @@
     "pages/index/index",
     "pages/logs/logs",
     "pages/login/login",
+    "pages/MFunction/mixFunc/mixFunc",
     "pages/MFunction/bankLoans/nkxxLoans/nkxxLoans",
-    "pages/MFunction/getPhoneNum/getPhoneNum",
     "pages/MFunction/creditCard/creditCard",
-    "pages/MFunction/webView/webView",
     "pages/MFunction/cars/carsList/carsList",
     "pages/MFunction/cars/carsSubList/carsSubList",
     "pages/MFunction/cars/subTwoList/subTwoList",
@@ -18,12 +17,16 @@
     "pages/MFunction/cars/salesList/salesList",
     "pages/MFunction/cars/mapView/mapView",
     "pages/MFunction/cars/footerSubView/footerSubView",
-    "pages/MFunction/cars/footerDetail/footerDetail"
+    "pages/MFunction/cars/footerDetail/footerDetail",
+    "pages/MFunction/tradingPlatform/home/home",
+    "pages/MFunction/tradingPlatform/release/release",
+    "pages/MFunction/tradingPlatform/search/search"
   ],
   "window": {
+    "backgroundColor": "#EDEEEE",
     "backgroundTextStyle": "dark",
     "navigationBarBackgroundColor": "#FF0033",
-    "navigationBarTitleText": "齐浩贷",
+    "navigationBarTitleText": "功能集",
     "navigationBarTextStyle": "white"
   },
   "tabBar": {

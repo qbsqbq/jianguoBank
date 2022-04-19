@@ -6,7 +6,7 @@
   <view class="scrview">
     <scroll-view class="scroll_view" scroll-x>
       <view class="scroll">
-        <view wx:for="{{topList}}" wx:key="{{item.id}}" data-id="{{item.id}}" bindtap="topItemClick">
+        <view wx:for="{{topList}}" wx:key="id" data-id="{{item.id}}" bindtap="topItemClick">
           <image class="scroll_image" src="{{item.imgUrl}}"></image>
           <view class="small_name">{{item.name}}</view>
         </view>

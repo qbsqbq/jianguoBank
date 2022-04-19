@@ -1,0 +1,171 @@
+/* pages/MFunction/mixFunc/mixFunc.wxss */
+
+
+Page {
+  /* background: #eee; */
+  background: rgb(237, 238, 238);
+}
+
+.itemView {
+  background: rgb(137, 207, 228);
+  /* height: 200px; */
+  margin:  10px;
+  border-radius: 10px;
+}
+.itemView1 {
+  background: white;
+  /* height: 200px; */
+  margin:  10px;
+  border-radius: 10px;
+  border: 2px solid rgb(137, 207, 228);
+}
+.inputView {
+  padding: 30rpx 80rpx;
+}
+.input {
+  padding: 20rpx;
+  background: #fff;
+  border-radius: 8rpx;
+}
+.callup {
+  font-size: 15px;
+  color: #5cbed6;
+  background: #fff
+}
+.swiperview {
+  padding: 2rpx;
+}
+.slide-image {
+  width: 100%;
+  border-radius: 10px;
+}
+.scanCode {
+  background-color: #5cbed6;
+  color: #fff;
+}
+.scantext {
+  padding: 20px 50px;
+  line-height: 44px;
+  background: #fff;
+}
+.messageView {
+  padding: 10rpx 30rpx;
+  font-size: 15px;
+}
+.qrImgbox {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+}
+.canvas {
+  margin: 10rpx;
+}
+.rightView {
+  background-color: cadetblue;
+}
+.qrInputView {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  /* background-color: chocolate; */
+  margin: 10rpx;
+}
+.qrinput {
+  background-color: white;
+  padding: 10rpx;
+  margin: 30rpx 0;
+  flex-wrap: wrap;
+  border-radius: 8rpx;
+}
+.qrbtncolor {
+  color: rgb(137, 207, 228);
+  text-align: center;
+}
+
+.radio-group{
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 70rpx;
+  color:#695f9b;
+}
+.radio{
+  display: inline-block;
+  flex: 1;
+  height: 100%;
+  border-color: #695f9b;
+  border-width: 1rpx 1rpx 1rpx 0;
+  border-style: solid;
+  box-sizing: border-box;
+  color: #695f9b;
+  text-align: center;
+  line-height: 70rpx;
+}
+.radio:first-child{
+  border-left: 1px solid #695f9b;
+  border-top-left-radius: 8rpx;
+  border-bottom-left-radius: 8rpx;
+  
+}
+.radio:last-child{
+  border-top-right-radius: 8rpx;
+  border-bottom-right-radius: 8rpx;
+}
+.radio-item{
+  position: absolute;
+  left: -99999rpx;
+  top: -99999rpx;
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+.active{
+  background-color: #695f9b;
+  color: #fff;
+  transition: all .3s;
+}
+
+
+/* 导入第三方样式表 */
+@import '../../../style/weui_ex.wxss';
+.view1 {
+  background: orange;
+}
+.view2 {
+  background: yellow;
+}
+.view3 {
+  background: pink;
+}
+
+.buttonView {
+  padding: 50rpx;
+}
+
+.gestureCanvas {
+  /* background-color: rgb(151, 228, 209); */
+  width:100%;
+  height:650rpx;
+}
+.lock-title{
+  text-align: center;
+  font-size: 36rpx;
+  color: #10AEFF;
+  padding: 20rpx 0 0 0;
+}
+.lock-title.error{
+  color: #e64340
+}
+.lock-title.succ{
+  color: #09bb07
+}
+.lock-reset{
+  text-align: center;
+  color:#10AEFF; 
+  font-size: 36rpx;
+  padding: 20rpx;
+}
+.lock-reset:active{
+  opacity: 0.8
+}
